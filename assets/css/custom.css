@@ -1,0 +1,11 @@
+h1, h2, h3, h4, h5, h6, p, a, b, strong, span, small, li, .btn, input, textarea, select{
+	font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI emoji !important;
+}
+.q-number{
+	width:35px;
+	height: 35px;
+	line-height: 35px;
+}
+.btn-primary, .btn:not(.btn-rounded){
+	border-radius:4px !important;
+}
