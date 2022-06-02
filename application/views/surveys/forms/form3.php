@@ -87,24 +87,30 @@
             <div class="options pt-2">
               <div class="form-group"> <span><small class="btn btn-success px-2 py-0 btn-sm mr-2">1</small> Very motivating</span> <span><small class="btn btn-danger px-2 py-0 btn-sm mx-2">4</small> Less motivating</span>
                 <div class="clearfix"></div>
-                <div class="list-group">
-                  <div class="bg-light rounded-sm p-1 border mt-3 list-group-item"> <i class="fa fa-sort mx-2"></i> <span class="btn btn-success px-2 py-0 btn-sm mr-2 d-inline-block">1</span>
-                    <p class="d-inline-block mb-1">Funding</p>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="bg-light rounded-sm p-1 border mt-3 list-group-item"> <i class="fa fa-sort mx-2"></i> <span class="btn btn-info px-2 py-0 btn-sm mr-2 d-inline-block">2</span>
-                    <p class="d-inline-block mb-1">Coaching</p>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="bg-light rounded-sm p-1 border mt-3 list-group-item"> <i class="fa fa-sort mx-2"></i> <span class="btn btn-warning px-2 py-0 btn-sm mr-2 d-inline-block">3</span>
-                    <p class="d-inline-block mb-1">Network access</p>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="bg-light rounded-sm p-1 border mt-3 list-group-item"> <i class="fa fa-sort mx-2"></i> <span class="btn btn-danger px-2 py-0 btn-sm mr-2 d-inline-block">4</span>
-                    <p class="d-inline-block mb-1">Gain knowledge</p>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
+                <form id="sort-it" class="w-100">
+                  <ol>
+                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
+                      <p class="d-inline-block mb-1">Funding</p>
+                      <input id="custom-number-1" name="custom-number-1" type="number" min="1" readonly class="disabled" />
+                      <div class="clearfix"></div>
+                    </li>
+                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
+                      <p class="d-inline-block mb-1">Coaching</p>
+                      <input id="custom-number-2" name="custom-number-2" type="number" min="1" readonly class="disabled" />
+                      <div class="clearfix"></div>
+                    </li>
+                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
+                      <p class="d-inline-block mb-1">Network access</p>
+                      <input id="custom-number-3" name="custom-number-3" type="number" min="1" readonly class="disabled" />
+                      <div class="clearfix"></div>
+                    </li>
+                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
+                      <p class="d-inline-block mb-1">Gain knowledge</p>
+                      <input id="custom-number-4" name="custom-number-4" type="number" min="1" readonly class="disabled" />
+                      <div class="clearfix"></div>
+                    </li>
+                  </ol>
+                </form>
               </div>
             </div>
           </div>
@@ -143,14 +149,14 @@
     <section class="fixed-bottom position-fixed w-100 bg-white shadow p-4 border">
       <div class="container">
         <div class="d-flex justify-content-between">
-          <div> <a href="<?=base_url('survey/form2')?>" class="btn btn-primary px-3"><i class="fa fa-angle-left"></i> &nbsp; Previous</a> </div>
+          <div> <a href="<?= base_url('survey/form2') ?>" class="btn btn-primary px-3"><i class="fa fa-angle-left"></i> &nbsp; Previous</a> </div>
           <div>
             <p class="mb-1">Page 3 from 17</p>
             <div class="progress">
               <div class="progress-bar bg-info" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-          <div> <button  name="submitData" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+          <div> <button name="submitData" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
         </div>
       </div>
     </section>
