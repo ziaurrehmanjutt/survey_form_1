@@ -68,7 +68,7 @@
               <label class="form-check-label">Very honest</label>
             </div>
           </div>
-        </div>
+        </div> 
         <div class="clearfix"></div>
       </section>
       
@@ -87,7 +87,7 @@
             <div class="form-check form-check-inline">
               <input <?= $data->degree_of_honesty == 'Partially' ? 'checked' : '' ?> class="form-check-input" type="radio" name="radio3"  />
               <label class="form-check-label">Partially</label>
-							
+
             </div>
             <div class="form-check form-check-inline">
               <input <?= $data->degree_of_honesty == 'Rather Strong' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather Strong" name="radio3"  />
