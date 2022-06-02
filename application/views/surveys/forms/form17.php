@@ -20,23 +20,23 @@
           <h6 class="h6 mt-2">How high was your concentration during the interview</h6>
           <div class="options pt-2">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
+              <input <?= $data->concentration_during_interview == 'Very low' ? 'checked' : '' ?> class="form-check-input" value="Very low" type="radio" name="concentration_during_interview"  />
               <label class="form-check-label">Very low</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
+              <input <?= $data->concentration_during_interview == 'Rather low' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather low" name="concentration_during_interview"  />
               <label class="form-check-label">Rather low</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
+              <input <?= $data->concentration_during_interview == 'Partially' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Partially" name="concentration_during_interview"  />
               <label class="form-check-label">Partially</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
+              <input <?= $data->concentration_during_interview == 'Rather High' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather High" name="concentration_during_interview"  />
               <label class="form-check-label">Rather High</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
+              <input <?= $data->concentration_during_interview == 'Very High' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Very High" name="concentration_during_interview"  />
               <label class="form-check-label">Very High</label>
             </div>
           </div>
@@ -48,23 +48,23 @@
           <h6 class="h6 mt-2">With what degree of honesty did you answer our questions</h6>
           <div class="options pt-2">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
+              <input <?= $data->degree_of_honesty == 'Not honest at all' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Not honest at all" name="degree_of_honesty"  />
               <label class="form-check-label">Not honest at all</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
+              <input <?= $data->degree_of_honesty == 'Rather not honest' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather not honest" name="degree_of_honesty"  />
               <label class="form-check-label">Rather not honest</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
+              <input <?= $data->degree_of_honesty == 'Partially' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Partially" name="degree_of_honesty"  />
               <label class="form-check-label">Partially</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
+              <input <?= $data->degree_of_honesty == 'Rather honest' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather honest" name="degree_of_honesty"  />
               <label class="form-check-label">Rather honest</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
+              <input <?= $data->degree_of_honesty == 'Very honest' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Very honest" name="degree_of_honesty"  />
               <label class="form-check-label">Very honest</label>
             </div>
           </div>
@@ -77,23 +77,23 @@
           <h6 class="h6 mt-2">Wie stark vertrauen Sie unseren Maßnahmen zur Anonymität und zum Persönlichkeitsschutz der Teilnehmenden in dieser Umfrage</h6>
           <div class="options pt-2">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->degree_of_honesty == 'Very honest' ? 'checked' : '' ?> class="form-check-input" type="radio" name="radio3"  />
               <label class="form-check-label">Not at all</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->degree_of_honesty == 'Very honest' ? 'checked' : '' ?> class="form-check-input" type="radio" name="radio3"  />
               <label class="form-check-label">Rather not</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->degree_of_honesty == 'Partially' ? 'checked' : '' ?> class="form-check-input" type="radio" name="radio3"  />
               <label class="form-check-label">Partially</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->degree_of_honesty == 'Rather Strong' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather Strong" name="radio3"  />
               <label class="form-check-label">Rather Strong</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->degree_of_honesty == 'Very Strong' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Very Strong" name="degree_of_honesty"  />
               <label class="form-check-label">Very Strong</label>
             </div>
           </div>
