@@ -3,24 +3,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Survey extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/userguide3/general/urls.html
-	 */
+
+	public function __construct() {        
+       parent::__construct();
+       $this->load->helper('url'); 
+        $this->load->model('Survey_Model');
+    }
+
 	public function index()
 	{
 		if(isset($_POST['submitData'])){
+			$this->Survey_Model->startNewForm();
 			redirect('survey/form1');
 			exit();
 		}
@@ -31,20 +24,34 @@ class Survey extends CI_Controller {
 
 	public function form1()
 	{
+		if(!isset($_SESSION['form_id'])){
+			redirect('survey');
+		}
 		if(isset($_POST['submitData'])){
+			$postArrau  = $_POST;
+			unset($postArrau['submitData']);
+			$this->Survey_Model->updateOrSave($postArrau,'survey_form_1');
 			redirect('survey/form2');
 			exit();
 		}
+		$data['data']  = $this->Survey_Model->getData('survey_form_1');
 		$this->load->view('surveys/includes/header.php');
-		$this->load->view('surveys/forms/form1.php');
+		$this->load->view('surveys/forms/form1.php',$data);
 		$this->load->view('surveys/includes/footer.php');
 	}
 	public function form2()
 	{
+		if(!isset($_SESSION['form_id'])){
+			redirect('survey');
+		}
 		if(isset($_POST['submitData'])){
+			$postArrau  = $_POST;
+			unset($postArrau['submitData']);
+			$this->Survey_Model->updateOrSave($postArrau,'survey_form_2');
 			redirect('survey/form3');
 			exit();
 		}
+		$data['data']  = $this->Survey_Model->getData('survey_form_2');
 		$this->load->view('surveys/includes/header.php');
 		$this->load->view('surveys/forms/form2.php');
 		$this->load->view('surveys/includes/footer.php');

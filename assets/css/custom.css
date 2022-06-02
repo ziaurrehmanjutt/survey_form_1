@@ -1,11 +1,77 @@
-h1, h2, h3, h4, h5, h6, p, a, b, strong, span, small, li, .btn, input, textarea, select{
-	font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI emoji !important;
+h1, h2, h3, h4, h5, h6, p, a, b, strong, span, small, li, .btn, input, textarea, select {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI emoji !important;
 }
-.q-number{
-	width:35px;
+.q-number {
+	width: 35px;
 	height: 35px;
 	line-height: 35px;
 }
-.btn-primary, .btn:not(.btn-rounded){
-	border-radius:4px !important;
+.btn-primary, .btn:not(.btn-rounded) {
+	border-radius: 4px !important;
+}
+#sort-it ol {
+	/* list style is faked with number inputs */
+	list-style: none;
+	padding: 0;
+}
+#sort-it ol li {
+	position: relative;
+	min-height: 1em;
+	cursor: move;
+	padding: 5px;
+	background: #FFF;
+	border: 1px solid #ccc;
+	margin: .25em 0;
+	border-radius: .25em;
+	display: list-item;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+ -webkit-appearance: none;
+}
+#sort-it ol li:nth-child(1) input {
+	background: #28a745!important;
+}
+#sort-it ol li:nth-child(2) input {
+	background: #17a2b8!important;
+}
+#sort-it ol li:nth-child(3) input {
+	background: #ffc107!important;
+}
+#sort-it ol li:nth-child(4) input {
+	background: #dc3545!important;
+}
+#sort-it ol li i {
+	margin-left: 35px;
+}
+#sort-it ol li input {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	left: 8px;
+	top: 8px;
+	border: 0;
+	text-align: center;
+	color: #FFF;
+}
+#sort-it ol li input:hover, #sort-it ol li input:active, #sort-it ol li input:focus {
+	border: none !important;
+}
+#sort-it ol li label {
+	/* visually hidden offscreen so it still benefits screen readers */
+	position: absolute;
+	left: -9999px;
+}
+/* sortable plugin styles when dragged */
+.dragged {
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2000;
+}
+li.placeholder {
+	position: relative;
+	background: purple;
 }
