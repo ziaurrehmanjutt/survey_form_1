@@ -53,17 +53,24 @@ class Survey extends CI_Controller {
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_2');
 		$this->load->view('surveys/includes/header.php');
-		$this->load->view('surveys/forms/form2.php');
+		$this->load->view('surveys/forms/form2.php',$data);
 		$this->load->view('surveys/includes/footer.php');
 	}
 	public function form3()
 	{
+		if(!isset($_SESSION['form_id'])){
+			redirect('survey');
+		}
 		if(isset($_POST['submitData'])){
+			$postArrau  = $_POST;
+			unset($postArrau['submitData']);
+			$this->Survey_Model->updateOrSave($postArrau,'survey_form_3');
 			redirect('survey/form4');
 			exit();
 		}
+		$data['data']  = $this->Survey_Model->getData('survey_form_3');
 		$this->load->view('surveys/includes/header.php');
-		$this->load->view('surveys/forms/form3.php');
+		$this->load->view('surveys/forms/form3.php',$data);
 		$this->load->view('surveys/includes/footer.php');
 	}
 
