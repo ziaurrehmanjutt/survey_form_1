@@ -77,24 +77,24 @@
           <h6 class="h6 mt-2">Wie stark vertrauen Sie unseren Maßnahmen zur Anonymität und zum Persönlichkeitsschutz der Teilnehmenden in dieser Umfrage</h6>
           <div class="options pt-2">
             <div class="form-check form-check-inline">
-              <input <?= $data->degree_of_honesty == 'Very honest' ? 'checked' : '' ?> class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->personlichkeitsschutz == 'Not at all' ? 'checked' : '' ?> class="form-check-input" value="Not at all" type="radio" name="personlichkeitsschutz"  />
               <label class="form-check-label">Not at all</label>
             </div>
             <div class="form-check form-check-inline">
-              <input <?= $data->degree_of_honesty == 'Very honest' ? 'checked' : '' ?> class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->personlichkeitsschutz == 'Rather not' ? 'checked' : '' ?> class="form-check-input" value="Rather not" type="radio" name="personlichkeitsschutz"  />
               <label class="form-check-label">Rather not</label>
             </div>
             <div class="form-check form-check-inline">
-              <input <?= $data->degree_of_honesty == 'Partially' ? 'checked' : '' ?> class="form-check-input" type="radio" name="radio3"  />
+              <input <?= $data->personlichkeitsschutz == 'Partially' ? 'checked' : '' ?> class="form-check-input" value="Partially" type="radio" name="personlichkeitsschutz"  />
               <label class="form-check-label">Partially</label>
 
             </div>
             <div class="form-check form-check-inline">
-              <input <?= $data->degree_of_honesty == 'Rather Strong' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather Strong" name="radio3"  />
+              <input <?= $data->personlichkeitsschutz == 'Rather Strong' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather Strong" name="personlichkeitsschutz"  />
               <label class="form-check-label">Rather Strong</label>
             </div>
             <div class="form-check form-check-inline">
-              <input <?= $data->degree_of_honesty == 'Very Strong' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Very Strong" name="degree_of_honesty"  />
+              <input <?= $data->personlichkeitsschutz == 'Very Strong' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Very Strong" name="personlichkeitsschutz"  />
               <label class="form-check-label">Very Strong</label>
             </div>
           </div>
@@ -107,23 +107,23 @@
           <h6 class="h6 mt-2">Denken Sie, dass Sie die besonderen Befragungsmethoden jeweils korrekt befolgt haben</h6>
           <div class="options pt-2">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
+              <input <?= $data->befragungsmethoden == 'Not at all' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Not at all" name="befragungsmethoden"  />
               <label class="form-check-label">Not at all</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
+              <input <?= $data->befragungsmethoden == 'Rather not' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather not" name="befragungsmethoden"  />
               <label class="form-check-label">Rather not</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
+              <input <?= $data->befragungsmethoden == 'Partially' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Partially" name="befragungsmethoden"  />
               <label class="form-check-label">Partially</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
+              <input <?= $data->befragungsmethoden == 'Rather Yes' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Rather Yes" name="befragungsmethoden"  />
               <label class="form-check-label">Rather Yes</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
+              <input <?= $data->befragungsmethoden == 'Yes definitely' ? 'checked' : '' ?> class="form-check-input" type="radio" value="Yes definitely" name="befragungsmethoden"  />
               <label class="form-check-label">Yes definitely</label>
             </div>
           </div>
@@ -135,7 +135,7 @@
           <h6 class="h6 mt-2">If you share your team name with us and more than two teammates have filled in the questionnaire, we will send you an analyzed exposé with your results that shows your results in comparison to other start-ups and possible rooms for improvement.</h6>
           <div class="options pt-2">
             <div class="form-group">
-              <input type="text" class="form-control"  />
+              <input type="text" class="form-control"  value="possible_rooms_for_improvement" name="possible_rooms_for_improvement"  />
             </div>
           </div>
         </div>
