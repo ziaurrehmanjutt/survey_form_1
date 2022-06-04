@@ -17,6 +17,9 @@ class Survey_Model extends CI_Model
     }
     public function updateOrSave($data,$table){
         $this->db->where('main_id',$_SESSION['form_id']);
+        if(!$data){
+            $data['main_id'] = $_SESSION['form_id'];
+        }
         $this->db->update($table, $data);
     }
     public function getData($table){

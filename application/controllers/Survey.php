@@ -69,6 +69,43 @@ class Survey extends CI_Controller {
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_3');
+
+		$array1 = array(
+			"title" => "Funding",
+			"value" => $data['data']->main_motivation_take_part_this_program_funding,
+			"name" => "main_motivation_take_part_this_program_funding",
+			"id" => "fund",
+		);
+		$array2 = array(
+			"title" => "Coaching",
+			"value" => $data['data']->main_motivation_take_part_this_program_coaching,
+			"name" => "main_motivation_take_part_this_program_coaching",
+			"id" => "coa",
+		);
+		$array3 = array(
+			"title" => "Network access",
+			"value" => $data['data']->main_motivation_take_part_this_program_network,
+			"name" => "main_motivation_take_part_this_program_network",
+			"id" => "netw",
+		);
+		$array4 = array(
+			"title" => "Gain knowledge",
+			"value" => $data['data']->main_motivation_take_part_this_program_knowledge,
+			"name" => "main_motivation_take_part_this_program_knowledge",
+			"id" => "gkn",
+		);
+
+		$allarray[] =  $array1;
+		$allarray[] =  $array2;
+		$allarray[] =  $array3;
+		$allarray[] =  $array4;
+
+		$price = array_column($allarray, 'value');
+
+		array_multisort($price, SORT_ASC, $allarray);
+
+		// echo "<pre>";
+		$data['sort_array'] = $allarray;
 		$this->load->view('surveys/includes/header.php');
 		$this->load->view('surveys/forms/form3.php',$data);
 		$this->load->view('surveys/includes/footer.php');
@@ -246,7 +283,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_13');
-			redirect('survey/form12');
+			redirect('survey/form14');
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_13');
@@ -318,8 +355,10 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_17');
-			redirect('survey/form18');
-			exit();
+			// redirect('survey/form17');
+			// exit();
+			$data['complete'] = true;
+			
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_17');
 		$this->load->view('surveys/includes/header.php');
