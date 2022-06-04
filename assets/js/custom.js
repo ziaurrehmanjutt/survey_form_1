@@ -5,7 +5,21 @@ $(function(){
       $(item).removeClass("dragged").removeAttr("style");
       $("body").removeClass("dragging");
 
+      console.log(item);
       getInitialOrder('#sort-it li');
+
+      
+    },
+    update: function( event, ui ) {
+      console.log(event)
+      console.log(ui)
+      var sortedIDs = $( "#sort-it ol" ).sortable( "toArray" );
+      var items = $( "#sort-it ol" ).sortable( "option", "items" );
+      console.log('Items',sortedIDs);
+      $('#ghty1').addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary')
+      sortedIDs.forEach((element,i) => {
+          $('#i'+element).val(i+1);
+      });
     }
   });
       

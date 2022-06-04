@@ -81,7 +81,7 @@
           </div>
           <div class="clearfix"></div>
         </section>
-        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">32</strong>
+        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong id="ghty1" class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">32</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">What was your main motivation to take part in this/these program(s)?</h6>
             <div class="options pt-2">
@@ -111,26 +111,14 @@
                     </li>
                   </ol> -->
                   <ol>
-                  <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                    <p class="d-inline-block mb-1">Funding</p>
-                    <input id="custom-number-1" name="main_motivation_take_part_this_program_funding" type="number" min="1" readonly class="disabled form-control" />
-                    <div class="clearfix"></div>
-                  </li>
-                  <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                    <p class="d-inline-block mb-1">Coaching</p>
-                    <input id="custom-number-2" name="main_motivation_take_part_this_program_coaching" type="number" min="1" readonly class="disabled" />
-                    <div class="clearfix"></div>
-                  </li>
-                  <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                    <p class="d-inline-block mb-1">Network access</p>
-                    <input id="custom-number-3" name="main_motivation_take_part_this_program_network" type="number" min="1" readonly class="disabled" />
-                    <div class="clearfix"></div>
-                  </li>
-                  <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                    <p class="d-inline-block mb-1">Gain knowledge</p>
-                    <input id="custom-number-4" name="main_motivation_take_part_this_program_knowledge" type="number" min="1" readonly class="disabled" />
-                    <div class="clearfix"></div>
-                  </li>
+                    <?php foreach ($sort_array as $key => $value) {  ?>
+                      <li class="mt-3 mw-100" id="<?=$value['id']?>"><i class="fa fa-sort"></i>
+                        <p class="d-inline-block mb-1"><?=$value['title']?></p>
+                        <input id="i<?=$value['id']?>" name="<?=$value['name']?>" type="number" min="1" readonly class="disabled" />
+                        <div class="clearfix"></div>
+                      </li>
+                    <?php } ?>
+      
                   </ol>
                 </div>
               </div>
