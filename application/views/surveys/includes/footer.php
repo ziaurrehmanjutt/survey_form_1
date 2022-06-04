@@ -4,6 +4,7 @@
 <br />
 <!-- Vendor -->
 <script src="<?= base_url('assets/') ?>vendor/jquery/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/jquery.appear/jquery.appear.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/jquery.easing/jquery.easing.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/jquery.cookie/jquery.cookie.min.js"></script>
@@ -42,20 +43,84 @@
     $(document).ready(function() {
         $("#form0").validate();
         $("#form1").validate();
+        $("input").change(function(el) {
+            let pr = $(this).parent().parent().parent().parent().children('strong')
+            if ($(this).val()) {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            } else {
+                pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
+            }
+
+
+            pr = $(this).parent().parent().parent().parent().parent().parent().parent().parent().children('strong');
+            if ($(this).val()) {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            } else {
+                pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
+            }
+
+        });
+
+        $("input[type='text']").each(function() {
+
+            let pr = $(this).parent().parent().parent().parent().children('strong')
+            if ($(this).val()) {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            } else {
+                pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
+            }
+            $(this).closest('.q-number').removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary')
+
+        });
+
+        $("input[type='number']").each(function() {
+
+            console.log($(this).val())
+            let pr = $(this).parent().parent().parent().parent().children('strong')
+            if ($(this).val()) {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            } else {
+                pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
+            }
+            console.log(pr);
+            $(this).closest('.q-number').removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary')
+
+        });
+
+        $("input[type='radio']").each(function() {
+            console.log($(this).val())
+            let pr = $(this).parent().parent().parent().parent().children('strong')
+            if ($(this).is(':checked')) {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            }
+            pr = $(this).parent().parent().parent().parent().parent().parent().parent().parent().children('strong');
+            console.log(pr);
+            if ($(this).is(':checked')) {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            }
+
+        });
+
+        //is(':checked'))
+
+        // '.rounded-circle'
+        //$('#divid').closest('div[class^="div-a"]');
+
     });
 </script>
 
 <script>
-$('input[type="range"]').on("change mousemove", function () {
-    var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+    $('input[type="range"]').on("change mousemove", function() {
+        var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
 
-    $(this).css('background-image',
-                '-webkit-gradient(linear, left top, right top, '
-                + 'color-stop(' + val + ', #2f466b), '
-                + 'color-stop(' + val + ', #d3d3db)'
-                + ')'
-                );
-});</script>
+        $(this).css('background-image',
+            '-webkit-gradient(linear, left top, right top, ' +
+            'color-stop(' + val + ', #2f466b), ' +
+            'color-stop(' + val + ', #d3d3db)' +
+            ')'
+        );
+    });
+</script>
 
 
 </body>
