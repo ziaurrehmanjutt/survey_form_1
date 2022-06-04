@@ -355,8 +355,10 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_17');
-			redirect('survey/form17');
-			exit();
+			// redirect('survey/form17');
+			// exit();
+			$data['complete'] = true;
+			
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_17');
 		$this->load->view('surveys/includes/header.php');
