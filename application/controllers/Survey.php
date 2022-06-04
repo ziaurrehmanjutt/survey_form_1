@@ -246,7 +246,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_13');
-			redirect('survey/form12');
+			redirect('survey/form14');
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_13');
@@ -318,7 +318,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_17');
-			redirect('survey/form18');
+			redirect('survey/form17');
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_17');
