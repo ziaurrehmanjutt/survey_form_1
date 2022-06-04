@@ -87,7 +87,7 @@
             <div class="options pt-2">
               <div class="form-group"> <span><small class="btn btn-success px-2 py-0 btn-sm mr-2">1</small> Very motivating</span> <span><small class="btn btn-danger px-2 py-0 btn-sm mx-2">4</small> Less motivating</span>
                 <div class="clearfix"></div>
-                <form id="sort-it" class="w-100">
+                <div id="sort-it" class="w-100">
                   <ol>
                     <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
                       <p class="d-inline-block mb-1">Funding</p>
@@ -110,7 +110,7 @@
                       <div class="clearfix"></div>
                     </li>
                   </ol>
-                </form>
+								</div>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@
               <div class="progress-bar bg-info" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-          <div> <button onclick="formSubmit()" name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+          <div> <button  name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
           <a href="<?= base_url('survey/form4') ?>">Skip</a>
         </div>
       </div>
@@ -169,9 +169,9 @@
 
 
 <script>
-  function formSubmit(){
-    console.log('Sumys');
+  // function formSubmit(){
+  //   console.log('Sumys');
 
-    console.log($("#form1").valid())
-  }
+  //   console.log($("#form1").valid())
+  // }
 </script>
