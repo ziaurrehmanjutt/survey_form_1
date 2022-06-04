@@ -13,172 +13,132 @@
     </div>
   </header>
   <form id="form1" method="POST">
-  <div role="main" class="main py-5">
+	<div role="main" class="main py-5">
     <div class="container" id="part-one">
-      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">183</strong>
+      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">49</strong>
         <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">In an argument, I always remain objective and stick to the facts.</h6>
+          <h6 class="h6 mt-2">&nbsp;</h6>
           <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">184</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">In an argument, I always remain objective and stick to the facts.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">185</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">When talking to someone, I always listen carefully to what the other person says.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">186</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">It has happened that I have taken advantage of someone in the past.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">187</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">I have occasionally thrown litter away in the countryside or on to the road.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">188</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">Sometimes I only help people if I expect to get something in return.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
+            <table class="table table-striped">
+			  <thead>
+              <tr>
+                <th></th>
+                <th>doesn't apply at all</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>applies completely</th>
+              </tr>
+			  </thead>
+              <tr>
+                <td>In an argument, I always remain objective and stick to the facts.</td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->remain_objective_and_stick == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="remain_objective_and_stick"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->remain_objective_and_stick == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="remain_objective_and_stick"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->remain_objective_and_stick == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="remain_objective_and_stick"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->remain_objective_and_stick == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="remain_objective_and_stick"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->remain_objective_and_stick == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="remain_objective_and_stick"  />
+                  </div></td>
+              </tr>
+              <tr>
+                <td>Even if I am feeling stressed, I am always friendly and polite to others.</td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->friendly_and_polite == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="friendly_and_polite"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->friendly_and_polite == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="friendly_and_polite"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->friendly_and_polite == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="friendly_and_polite"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->friendly_and_polite == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="friendly_and_polite"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->friendly_and_polite == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="friendly_and_polite"  />
+                  </div></td>
+              </tr>
+              <tr>
+                <td>When talking to someone, I always listen carefully to what the other person says.</td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->always_listen_carefully == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="always_listen_carefully"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->always_listen_carefully == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="always_listen_carefully"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->always_listen_carefully == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="always_listen_carefully"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->always_listen_carefully == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="always_listen_carefully"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->always_listen_carefully == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="always_listen_carefully"  />
+                  </div></td>
+              </tr>
+              <tr>
+                <td>It has happened that I have taken advantage of someone in the past.</td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->advantage_of_someone == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="advantage_of_someone"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->advantage_of_someone == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="advantage_of_someone"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->advantage_of_someone == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="advantage_of_someone"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->advantage_of_someone == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="advantage_of_someone"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->advantage_of_someone == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="advantage_of_someone"  />
+                  </div></td>
+              </tr>
+              <tr>
+                <td>I have occasionally thrown litter away in the countryside or on to the road.</td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->occasionally_thrown_litter == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="occasionally_thrown_litter"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->occasionally_thrown_litter == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="occasionally_thrown_litter"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->occasionally_thrown_litter == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="occasionally_thrown_litter"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->occasionally_thrown_litter == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="occasionally_thrown_litter"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->occasionally_thrown_litter == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="occasionally_thrown_litter"  />
+                  </div></td>
+              </tr>
+              <tr>
+                <td>Sometimes I only help people if I expect to get something in return.</td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->expect_to_get_something == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="expect_to_get_something"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->expect_to_get_something == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="expect_to_get_something"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->expect_to_get_something == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="expect_to_get_something"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->expect_to_get_something == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="expect_to_get_something"  />
+                  </div></td>
+                <td width="60"><div class="form-check form-check-inline">
+              			<input <?= $data->expect_to_get_something == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="expect_to_get_something"  />
+                  </div></td>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="clearfix"></div>
