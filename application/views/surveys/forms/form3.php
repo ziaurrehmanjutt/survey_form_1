@@ -20,16 +20,16 @@
             <h6 class="h6 mt-2">Is your team currently part of an accelerator/ incubator or has it been in one in the past?</h6>
             <div class="options pt-2">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio1" />
-                <label class="form-check-label">Currently</label>
+                <input class="form-check-input" id="team_currently1" <?= $data->team_currently_part_of_accelerator_or_incubator == 'Currently' ? 'checked' : '' ?>  value="Currently" type="radio" name="team_currently_part_of_accelerator_or_incubator" />
+                <label class="form-check-label" for="team_currently1">Currently</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio1" />
-                <label class="form-check-label">Past</label>
+                <input class="form-check-input" id="team_currently2" <?= $data->team_currently_part_of_accelerator_or_incubator == 'Past' ? 'checked' : '' ?>  value="Past" type="radio" name="team_currently_part_of_accelerator_or_incubator" />
+                <label class="form-check-label" for="team_currently2">Past</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio1" />
-                <label class="form-check-label">No</label>
+                <input class="form-check-input" id="team_currently3" <?= $data->team_currently_part_of_accelerator_or_incubator == 'No' ? 'checked' : '' ?>  value="No" type="radio" name="team_currently_part_of_accelerator_or_incubator" />
+                <label class="form-check-label" for="team_currently3">No</label>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@
             <h6 class="h6 mt-2">In how many incubator programs has your team been part of?</h6>
             <div class="options pt-2">
               <div class="form-group">
-                <input type="number" class="form-control" />
+                <input name="incubator_programs_your_team_been_part" value="<?= $data->incubator_programs_your_team_been_part ?>" type="number" class="form-control" />
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@
             <h6 class="h6 mt-2">In how many accelerator programs has your team been part of?</h6>
             <div class="options pt-2">
               <div class="form-group">
-                <input type="number" class="form-control" />
+                <input name="accelerator_programs_your_team_been_part" value="<?= $data->accelerator_programs_your_team_been_part ?>" type="number" class="form-control" />
               </div>
             </div>
           </div>
@@ -62,20 +62,20 @@
             <h6 class="h6 mt-2">Has your been part of multiple incubator or accelerator programs at the same time?</h6>
             <div class="options pt-2">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio2" />
-                <label class="form-check-label">Multiple accelerator programs</label>
+                <input class="form-check-input" id="team_currently11" <?= $data->part_of_multiple_incubator_or_accelerator_programs == 'accelerator' ? 'checked' : '' ?>  value="accelerator" type="radio" name="part_of_multiple_incubator_or_accelerator_programs" />
+                <label class="form-check-label" for="team_currently11">Multiple accelerator programs</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio2" />
-                <label class="form-check-label">Multiple incubator programs</label>
+                <input class="form-check-input" id="team_currently12" <?= $data->part_of_multiple_incubator_or_accelerator_programs == 'incubator' ? 'checked' : '' ?>  value="incubator" type="radio" name="part_of_multiple_incubator_or_accelerator_programs" />
+                <label class="form-check-label" for="team_currently12">Multiple incubator programs</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio2" />
-                <label class="form-check-label">Accelerator and incubator program</label>
+                <input class="form-check-input" id="team_currently13" <?= $data->part_of_multiple_incubator_or_accelerator_programs == 'Accelerator and incubator' ? 'checked' : '' ?>  value="Accelerator and incubator" type="radio" name="part_of_multiple_incubator_or_accelerator_programs" />
+                <label class="form-check-label" for="team_currently13">Accelerator and incubator program</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio2" />
-                <label class="form-check-label">No</label>
+                <input class="form-check-input" id="team_currently14" <?= $data->part_of_multiple_incubator_or_accelerator_programs == 'No' ? 'checked' : '' ?>  value="No" type="radio" name="part_of_multiple_incubator_or_accelerator_programs" />
+                <label class="form-check-label" for="team_currently14">No</label>
               </div>
             </div>
           </div>
@@ -91,22 +91,22 @@
                   <ol>
                     <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
                       <p class="d-inline-block mb-1">Funding</p>
-                      <input id="custom-number-1" name="custom-number-1" type="number" min="1" readonly class="disabled" />
+                      <input id="custom-number-1" name="main_motivation_take_part_this_program_funding" value="<?= $data->main_motivation_take_part_this_program_funding ?>" type="number" min="1" max="4"  class="form-control" />
                       <div class="clearfix"></div>
                     </li>
                     <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
                       <p class="d-inline-block mb-1">Coaching</p>
-                      <input id="custom-number-2" name="custom-number-2" type="number" min="1" readonly class="disabled" />
+                      <input id="custom-number-2" name="main_motivation_take_part_this_program_coaching" value="<?= $data->main_motivation_take_part_this_program_coaching ?>" type="number" min="1" max="4"  class="form-control" />
                       <div class="clearfix"></div>
                     </li>
                     <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
                       <p class="d-inline-block mb-1">Network access</p>
-                      <input id="custom-number-3" name="custom-number-3" type="number" min="1" readonly class="disabled" />
+                      <input id="custom-number-3" name="main_motivation_take_part_this_program_network" value="<?= $data->main_motivation_take_part_this_program_network ?>" type="number" min="1" max="4"  class="form-control" />
                       <div class="clearfix"></div>
                     </li>
                     <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
                       <p class="d-inline-block mb-1">Gain knowledge</p>
-                      <input id="custom-number-4" name="custom-number-4" type="number" min="1" readonly class="disabled" />
+                      <input id="custom-number-4" name="main_motivation_take_part_this_program_knowledge" value="<?= $data->main_motivation_take_part_this_program_knowledge ?>" type="number" min="1" max="4"  class="form-control" />
                       <div class="clearfix"></div>
                     </li>
                   </ol>
@@ -120,11 +120,14 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">I believe that being part of these programs helped us to reach our goals quicker.</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="radio3" />
-                <label class="form-check-label">doesn't apply at all</label>
+              <div class="form-check">
+                <label style="width: 20%;">Does Not Apply</label>
+                <input name="programs_helped_reach_goals_quicker" value="<?= $data->programs_helped_reach_goals_quicker ?>" style="width: 50%;" type="range" min="0" max="100"/>
+                <label style="width: 20%;text-align: right;">Apply Completely</label>
+                <!-- <input class="form-check-input" type="radio" name="radio3" />
+                <label class="form-check-label">doesn't apply at all</label> -->
               </div>
-              <div class="form-check form-check-inline">
+              <!-- <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="radio3" />
                 <label class="form-check-label"></label>
               </div>
@@ -139,7 +142,7 @@
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="radio3" />
                 <label class="form-check-label">applies completely</label>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="clearfix"></div>
@@ -156,9 +159,19 @@
               <div class="progress-bar bg-info" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-          <div> <button name="submitData" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+          <div> <button onclick="formSubmit()" name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+          <a href="<?= base_url('survey/form4') ?>">Skip</a>
         </div>
       </div>
     </section>
   </form>
 </div>
+
+
+<script>
+  function formSubmit(){
+    console.log('Sumys');
+
+    console.log($("#form1").valid())
+  }
+</script>

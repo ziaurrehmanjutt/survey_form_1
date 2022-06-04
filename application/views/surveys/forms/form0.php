@@ -12,6 +12,11 @@
       </div>
     </div>
   </header>
+  <?php if(isset($_SESSION['form_id']) && $_SESSION['form_id']): ?>
+    <div class="alert alert-warning">
+        You are already continue on a previous form! <a href="<?= base_url('survey/form1') ?>">Click Here</a> to continue on that
+    </div>
+  <?php  endif  ?>
   <form id="form1" method="POST">
     <div role="main" class="main py-5">
       <div class="container" id="part-one">

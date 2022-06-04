@@ -13,303 +13,323 @@
     </div>
   </header>
   <form id="form1" method="POST">
-  <div role="main" class="main py-5">
-    <div class="container" id="part-one">
-      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">43</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">I have found a meaningful career.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio1"  />
-              <label class="form-check-label">applies completely</label>
+    <div role="main" class="main py-5">
+      <div class="container" id="part-one">
+        <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">35</strong>
+          <div class="d-block overflow-hidden">
+            <h6 class="h6 mt-2">&nbsp;</h6>
+            <div class="options pt-2">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>absolutely untrue</th>
+                    <th></th>
+                    <th>neither true nor untrue</th>
+                    <th></th>
+                    <th>absolutely true</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>I have found a meaningful career.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->found_meaningful_career == '0' ? 'checked' : '' ?> value="0" type="radio" name="found_meaningful_career" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->found_meaningful_career == '1' ? 'checked' : '' ?> value="1" type="radio" name="found_meaningful_career" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->found_meaningful_career == '2' ? 'checked' : '' ?> value="2" type="radio" name="found_meaningful_career" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->found_meaningful_career == '3' ? 'checked' : '' ?> value="3" type="radio" name="found_meaningful_career" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->found_meaningful_career == '4' ? 'checked' : '' ?> value="4" type="radio" name="found_meaningful_career" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>I view my work as contributing to my personal growth.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->contributing_my_personal_growth == '0' ? 'checked' : '' ?> value="0" type="radio" name="contributing_my_personal_growth" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->contributing_my_personal_growth == '1' ? 'checked' : '' ?> value="1" type="radio" name="contributing_my_personal_growth" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->contributing_my_personal_growth == '2' ? 'checked' : '' ?> value="2" type="radio" name="contributing_my_personal_growth" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->contributing_my_personal_growth == '3' ? 'checked' : '' ?> value="3" type="radio" name="contributing_my_personal_growth" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->contributing_my_personal_growth == '4' ? 'checked' : '' ?> value="4" type="radio" name="contributing_my_personal_growth" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>My work really makes no difference to the world.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_no_difference_world == '0' ? 'checked' : '' ?> value="0" type="radio" name="work_makes_no_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_no_difference_world == '1' ? 'checked' : '' ?> value="1" type="radio" name="work_makes_no_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_no_difference_world == '2' ? 'checked' : '' ?> value="2" type="radio" name="work_makes_no_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_no_difference_world == '3' ? 'checked' : '' ?> value="3" type="radio" name="work_makes_no_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_no_difference_world == '4' ? 'checked' : '' ?> value="4" type="radio" name="work_makes_no_difference_world" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>I understand how my work contributes to my life’s meaning. </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->understand_work_contributes_life_meaning == '0' ? 'checked' : '' ?> value="0" type="radio" name="understand_work_contributes_life_meaning" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->understand_work_contributes_life_meaning == '1' ? 'checked' : '' ?> value="1" type="radio" name="understand_work_contributes_life_meaning" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->understand_work_contributes_life_meaning == '2' ? 'checked' : '' ?> value="2" type="radio" name="understand_work_contributes_life_meaning" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->understand_work_contributes_life_meaning == '3' ? 'checked' : '' ?> value="3" type="radio" name="understand_work_contributes_life_meaning" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->understand_work_contributes_life_meaning == '4' ? 'checked' : '' ?> value="4" type="radio" name="understand_work_contributes_life_meaning" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>I have a good sense of what makes my job meaningful.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->good_sense_what_makes_job_meaningful == '0' ? 'checked' : '' ?> value="0" type="radio" name="good_sense_what_makes_job_meaningful" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->good_sense_what_makes_job_meaningful == '1' ? 'checked' : '' ?> value="1" type="radio" name="good_sense_what_makes_job_meaningful" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->good_sense_what_makes_job_meaningful == '2' ? 'checked' : '' ?> value="2" type="radio" name="good_sense_what_makes_job_meaningful" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->good_sense_what_makes_job_meaningful == '3' ? 'checked' : '' ?> value="3" type="radio" name="good_sense_what_makes_job_meaningful" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->good_sense_what_makes_job_meaningful == '4' ? 'checked' : '' ?> value="4" type="radio" name="good_sense_what_makes_job_meaningful" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>I know my work makes a positive difference in the world.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_positive_difference_world == '0' ? 'checked' : '' ?> value="0" type="radio" name="work_makes_positive_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_positive_difference_world == '1' ? 'checked' : '' ?> value="1" type="radio" name="work_makes_positive_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_positive_difference_world == '2' ? 'checked' : '' ?> value="2" type="radio" name="work_makes_positive_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_positive_difference_world == '3' ? 'checked' : '' ?> value="3" type="radio" name="work_makes_positive_difference_world" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_makes_positive_difference_world == '4' ? 'checked' : '' ?> value="4" type="radio" name="work_makes_positive_difference_world" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>My work helps me better understand myself.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_understand_myself == '0' ? 'checked' : '' ?> value="0" type="radio" name="work_helps_understand_myself" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_understand_myself == '1' ? 'checked' : '' ?> value="1" type="radio" name="work_helps_understand_myself" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_understand_myself == '2' ? 'checked' : '' ?> value="2" type="radio" name="work_helps_understand_myself" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_understand_myself == '3' ? 'checked' : '' ?> value="3" type="radio" name="work_helps_understand_myself" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_understand_myself == '4' ? 'checked' : '' ?> value="4" type="radio" name="work_helps_understand_myself" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>I have discovered work that has a satisfying purpose.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->discovered_work_satisfying_purpose == '0' ? 'checked' : '' ?> value="0" type="radio" name="discovered_work_satisfying_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->discovered_work_satisfying_purpose == '1' ? 'checked' : '' ?> value="1" type="radio" name="discovered_work_satisfying_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->discovered_work_satisfying_purpose == '2' ? 'checked' : '' ?> value="2" type="radio" name="discovered_work_satisfying_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->discovered_work_satisfying_purpose == '3' ? 'checked' : '' ?> value="3" type="radio" name="discovered_work_satisfying_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->discovered_work_satisfying_purpose == '4' ? 'checked' : '' ?> value="4" type="radio" name="discovered_work_satisfying_purpose" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>My work helps me make sense of the world around me.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_make_sense_world_around == '0' ? 'checked' : '' ?> value="0" type="radio" name="work_helps_make_sense_world_around" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_make_sense_world_around == '1' ? 'checked' : '' ?> value="1" type="radio" name="work_helps_make_sense_world_around" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_make_sense_world_around == '2' ? 'checked' : '' ?> value="2" type="radio" name="work_helps_make_sense_world_around" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_make_sense_world_around == '3' ? 'checked' : '' ?> value="3" type="radio" name="work_helps_make_sense_world_around" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->work_helps_make_sense_world_around == '4' ? 'checked' : '' ?> value="4" type="radio" name="work_helps_make_sense_world_around" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>The work I do serves a greater purpose.</td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->serves_greater_purpose == '0' ? 'checked' : '' ?> value="0" type="radio" name="serves_greater_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->serves_greater_purpose == '1' ? 'checked' : '' ?> value="1" type="radio" name="serves_greater_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->serves_greater_purpose == '2' ? 'checked' : '' ?> value="2" type="radio" name="serves_greater_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->serves_greater_purpose == '3' ? 'checked' : '' ?> value="3" type="radio" name="serves_greater_purpose" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->serves_greater_purpose == '4' ? 'checked' : '' ?> value="4" type="radio" name="serves_greater_purpose" />
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">44</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">I view my work as contributing to my personal growth.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio2"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">45</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">My work really makes no difference to the world.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio3"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">46</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">I understand how my work contributes to my life’s meaning.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio4"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">47</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">I have a good sense of what makes my job meaningful.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio5"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">48</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">I know my work makes a positive difference in the world.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio6"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">49</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">My work helps me better understand myself.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio7"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio7"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio7"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio7"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio7"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">50</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">I have discovered work that has a satisfying purpose.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio8"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio8"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio8"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio8"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio8"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">51</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">My work helps me make sense of the world around me.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio9"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio9"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio9"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio9"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio9"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">52</strong>
-        <div class="d-block overflow-hidden">
-          <h6 class="h6 mt-2">The work I do serves a greater purpose.</h6>
-          <div class="options pt-2">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio10"  />
-              <label class="form-check-label">doesn't apply at all</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio10"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio10"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio10"  />
-              <label class="form-check-label"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radio10"  />
-              <label class="form-check-label">applies completely</label>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
-    </div>
-  </div>
-  <section class="fixed-bottom position-fixed w-100 bg-white shadow p-4 border">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-        <div> <a href="<?=base_url('survey/form4')?>" class="btn btn-primary px-3"><i class="fa fa-angle-left"></i> &nbsp; Previous</a> </div>
-        <div>
-          <p class="mb-1">Page 5 from 17</p>
-          <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div> <button  name="submitData" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+          <div class="clearfix"></div>
+        </section>
       </div>
     </div>
-  </section>
+    <section class="fixed-bottom position-fixed w-100 bg-white shadow p-4 border">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div> <a href="<?= base_url('survey/form4') ?>" class="btn btn-primary px-3"><i class="fa fa-angle-left"></i> &nbsp; Previous</a> </div>
+          <div>
+            <p class="mb-1">Page 5 from 17</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div> <button name="submitData" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+        </div>
+      </div>
+    </section>
   </form>
 </div>
