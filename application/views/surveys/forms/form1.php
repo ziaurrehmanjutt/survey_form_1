@@ -19,15 +19,16 @@
                     <div class="d-block overflow-hidden">
                         <h6 class="h6 mt-2">What is your gender?</h6>
                         <div class="options pt-2">
-                            <div class="form-check form-check-inline">
+
+                            <div class="form-check">
                                 <input  id="your_gender1" <?= $data->your_gender == 'Male' ? 'checked' : '' ?> value="Male" class="form-check-input" type="radio" name="your_gender" />
                                 <label for="your_gender1" class="form-check-label">Male</label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check">
                                 <input  id="your_gender2" <?= $data->your_gender == 'Female' ? 'checked' : '' ?> value="Female" class="form-check-input" type="radio" name="your_gender" />
                                 <label for="your_gender2" class="form-check-label">Female</label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check">
                                 <input id="your_gender3" <?= $data->your_gender == 'Other' ? 'checked' : '' ?>  value="Other" class="form-check-input" type="radio" name="your_gender" />
                                 <label for="your_gender3" class="form-check-label">Other</label>
                             </div>
@@ -36,9 +37,9 @@
                     <div class="clearfix"></div>
                 </section>
                 <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">2</strong>
-                    <div class="d-block overflow-hidden">
+                    <div class="d-block overflow-hidden" >
                         <h6 class="h6 mt-2">How old are you?</h6>
-                        <div class="options pt-2">
+                        <div class="options pt-2" style="position: relative;">
                             <div class="form-group">
                                 <input name="old_are_you" value="<?= $data->old_are_you ?>" type="number" min="0"  class="form-control" />
                             </div>
@@ -50,25 +51,25 @@
                     <div class="d-block overflow-hidden">
                         <h6 class="h6 mt-2">What is the highest education you completed?</h6>
                         <div class="options pt-2">
-                            <div class="form-check form-check-inline">
-                                <input  <?= $data->highest_education_you_completed == 'Undergraduate' ? 'checked' : '' ?> class="form-check-input" value="Undergraduate" type="radio" name="highest_education_you_completed" />
-                                <label class="form-check-label">Undergraduate (Bachelor level) </label>
+                            <div class="form-check ">
+                                <input id="q3-1" <?= $data->highest_education_you_completed == 'Undergraduate' ? 'checked' : '' ?> class="form-check-input" value="Undergraduate" type="radio" name="highest_education_you_completed" />
+                                <label for="q3-1" class="form-check-label">Undergraduate (Bachelor level) </label>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input <?= $data->highest_education_you_completed == 'Graduate' ? 'checked' : '' ?> class="form-check-input" value="Graduate" type="radio" name="highest_education_you_completed" />
-                                <label class="form-check-label">Graduate (Master level)</label>
+                            <div class="form-check ">
+                                <input id="q3_1" <?= $data->highest_education_you_completed == 'Graduate' ? 'checked' : '' ?> class="form-check-input" value="Graduate" type="radio" name="highest_education_you_completed" />
+                                <label for="q3_1" class="form-check-label">Graduate (Master level)</label>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input <?= $data->highest_education_you_completed == 'Other' ? 'checked' : '' ?> class="form-check-input" value="Other" type="radio" name="highest_education_you_completed" />
-                                <label class="form-check-label">Other (e.g., MBA)</label>
+                            <div class="form-check ">
+                                <input id="q3_2" <?= $data->highest_education_you_completed == 'Other' ? 'checked' : '' ?> class="form-check-input" value="Other" type="radio" name="highest_education_you_completed" />
+                                <label  for="q3_2" class="form-check-label">Other (e.g., MBA)</label>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input <?= $data->highest_education_you_completed == 'PhD' ? 'checked' : '' ?> class="form-check-input" value="PhD" type="radio" name="highest_education_you_completed" />
-                                <label class="form-check-label">PhD</label>
+                            <div class="form-check ">
+                                <input id="q3_3" <?= $data->highest_education_you_completed == 'PhD' ? 'checked' : '' ?> class="form-check-input" value="PhD" type="radio" name="highest_education_you_completed" />
+                                <label for="q3_3" class="form-check-label">PhD</label>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input <?= $data->highest_education_you_completed == 'No degree' ? 'checked' : '' ?> class="form-check-input" value="No degree" type="radio" name="highest_education_you_completed" />
-                                <label class="form-check-label">No degree</label>
+                            <div class="form-check ">
+                                <input id="q3_4" <?= $data->highest_education_you_completed == 'No degree' ? 'checked' : '' ?> class="form-check-input" value="No degree" type="radio" name="highest_education_you_completed" />
+                                <label  for="q3_4" class="form-check-label">No degree</label>
                             </div>
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                         <h6 class="h6 mt-2">How many ventures did you start?</h6>
                         <div class="options pt-2">
                             <div class="form-group">
-                                <input value="<?= $data->ventures_you_start ?>" name="ventures_you_start" type="number" class="form-control" />
+                                <input value="<?= $data->ventures_you_start ?>" name="ventures_you_start" type="number" min="0" class="form-control" />
                             </div>
                         </div>
                     </div>
@@ -130,7 +131,7 @@
                         <h6 class="h6 mt-2">How many ventures did you exited?</h6>
                         <div class="options pt-2">
                             <div class="form-group">
-                                <input value="<?= $data->ventures_you_exited ?>" name="ventures_you_exited" type="number" class="form-control" />
+                                <input min="0" value="<?= $data->ventures_you_exited ?>" name="ventures_you_exited" type="number" class="form-control" />
                             </div>
                         </div>
                     </div>
@@ -140,13 +141,13 @@
                     <div class="d-block overflow-hidden">
                         <h6 class="h6 mt-2">Are you a (Co-)Founder of your start-up?</h6>
                         <div class="options pt-2">
-                            <div class="form-check form-check-inline">
-                                <input <?= $data->founder_your_startup == 'Yes' ? 'checked' : '' ?> class="form-check-input" value="Yes" type="radio" name="founder_your_startup" />
-                                <label class="form-check-label">Yes</label>
+                            <div class="form-check ">
+                                <input  id="q9_1" <?= $data->founder_your_startup == 'Yes' ? 'checked' : '' ?> class="form-check-input" value="Yes" type="radio" name="founder_your_startup" />
+                                <label for="q9_1" class="form-check-label">Yes</label>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input <?= $data->founder_your_startup == 'No' ? 'checked' : '' ?> class="form-check-input" value="No" type="radio" name="founder_your_startup" />
-                                <label class="form-check-label">No</label>
+                            <div class="form-check ">
+                                <input  id="q9_2" <?= $data->founder_your_startup == 'No' ? 'checked' : '' ?> class="form-check-input" value="No" type="radio" name="founder_your_startup" />
+                                <label for="q9_2" class="form-check-label">No</label>
                             </div>
                         </div>
                     </div>

@@ -10,6 +10,8 @@
 <script src="<?= base_url('assets/') ?>vendor/jquery.cookie/jquery.cookie.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/popper/umd/popper.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
 <script src="<?= base_url('assets/') ?>vendor/common/common.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/jquery.validation/jquery.validate.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
@@ -41,7 +43,7 @@
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script>
     $(document).ready(function() {
-        $("#form0").validate();
+        // $("#form0").validate();
         $("#form1").validate();
         $("input").change(function(el) {
             let pr = $(this).parent().parent().parent().parent().children('strong')
@@ -145,6 +147,14 @@
         );
     });
 </script>
+
+
+<script>
+  $(function() {
+    var spinner = $( "#spinner" ).spinner();
+  });
+  </script>
+
 
 
 </body>

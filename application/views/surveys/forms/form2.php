@@ -19,29 +19,29 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">What is your start-ups stage?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input"  <?= $data->your_startups_stage == 'Idea' ? 'checked' : '' ?> type="radio" value="Idea" name="your_startups_stage" />
-                <label class="form-check-label">Idea</label>
+              <div class="form-check">
+                <input id="q11_1" class="form-check-input"  <?= $data->your_startups_stage == 'Idea' ? 'checked' : '' ?> type="radio" value="Idea" name="your_startups_stage" />
+                <label for="q11_1" class="form-check-label">Idea</label>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" <?= $data->your_startups_stage == 'Prototype' ? 'checked' : '' ?> type="radio" value="Prototype" name="your_startups_stage" />
-                <label class="form-check-label">Prototype</label>
+              <div class="form-check">
+                <input id="q11_2" class="form-check-input" <?= $data->your_startups_stage == 'Prototype' ? 'checked' : '' ?> type="radio" value="Prototype" name="your_startups_stage" />
+                <label for="q11_2" class="form-check-label">Prototype</label>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" <?= $data->your_startups_stage == 'Start-up' ? 'checked' : '' ?> type="radio" value="Start-up" name="your_startups_stage" />
-                <label class="form-check-label">Start-up</label>
+              <div class="form-check">
+                <input id="q11_3" class="form-check-input" <?= $data->your_startups_stage == 'Start-up' ? 'checked' : '' ?> type="radio" value="Start-up" name="your_startups_stage" />
+                <label for="q11_3" class="form-check-label">Start-up</label>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" <?= $data->your_startups_stage == 'Early Growth' ? 'checked' : '' ?> type="radio" value="Early Growth" name="your_startups_stage" />
-                <label class="form-check-label">Early Growth</label>
+              <div class="form-check">
+                <input id="q11_4" class="form-check-input" <?= $data->your_startups_stage == 'Early Growth' ? 'checked' : '' ?> type="radio" value="Early Growth" name="your_startups_stage" />
+                <label for="q11_4" class="form-check-label">Early Growth</label>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input"  <?= $data->your_startups_stage == 'Expansion' ? 'checked' : '' ?> type="radio" value="Expansion" name="your_startups_stage" />
-                <label class="form-check-label">Expansion</label>
+              <div class="form-check">
+                <input id="q11_5" class="form-check-input"  <?= $data->your_startups_stage == 'Expansion' ? 'checked' : '' ?> type="radio" value="Expansion" name="your_startups_stage" />
+                <label for="q11_5" class="form-check-label">Expansion</label>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" <?= $data->your_startups_stage == 'Maturity' ? 'checked' : '' ?> type="radio" value="Maturity" name="your_startups_stage" />
-                <label class="form-check-label">Maturity</label>
+              <div class="form-check">
+                <input id="q11_6" class="form-check-input" <?= $data->your_startups_stage == 'Maturity' ? 'checked' : '' ?> type="radio" value="Maturity" name="your_startups_stage" />
+                <label for="q11_6" class="form-check-label">Maturity</label>
               </div>
             </div>
           </div>
@@ -84,55 +84,55 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">To which main sector does your start-up belongs to?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input"  <?= $data->which_sector_your_startup_belong == 'Advertising' ? 'checked' : '' ?>  value="Advertising" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Advertising/ Design Marketing </label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Architecture' ? 'checked' : '' ?>  value="Architecture" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Architecture/ Engineering</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Construction' ? 'checked' : '' ?>  value="Construction" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Construction</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Consulting' ? 'checked' : '' ?>  value="Consulting" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Consulting (Law, Tax, Management, HR)</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Education' ? 'checked' : '' ?>  value="Education" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Education and Training</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Financial' ? 'checked' : '' ?>  value="Financial" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Financial services</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Human health' ? 'checked' : '' ?>  value="Human health" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Human health and social work activities</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Information technology' ? 'checked' : '' ?>  value="Information technology" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Information technology (IT) and communication (incl. software and IT services)</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Manufacturing' ? 'checked' : '' ?>  value="Manufacturing" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Manufacturing</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Tourism' ? 'checked' : '' ?>  value="Tourism" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Tourism and leisure</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Trade' ? 'checked' : '' ?>  value="Trade" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Trade (Retail/ whole sale)</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Other services' ? 'checked' : '' ?>  value="Other services" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Other services  (z.B. Transport)</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input class="form-check-input" <?= $data->which_sector_your_startup_belong == 'Other' ? 'checked' : '' ?>  value="Other" type="radio" name="which_sector_your_startup_belong" />
                 <label class="form-check-label">Other</label>
               </div>
@@ -166,19 +166,19 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">Does your team receive consulting, mentoring or coaching? </h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->team_receive_consulting_mentoring_coaching == 'Consulting' ? 'checked' : '' ?>  value="Consulting" class="form-check-input" type="radio" name="team_receive_consulting_mentoring_coaching" />
                 <label class="form-check-label">Consulting</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->team_receive_consulting_mentoring_coaching == 'Coaching' ? 'checked' : '' ?>  value="Coaching" class="form-check-input" type="radio" name="team_receive_consulting_mentoring_coaching" />
                 <label class="form-check-label">Coaching</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->team_receive_consulting_mentoring_coaching == 'Mentoring' ? 'checked' : '' ?>  value="Mentoring" class="form-check-input" type="radio" name="team_receive_consulting_mentoring_coaching" />
                 <label class="form-check-label">Mentoring</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->team_receive_consulting_mentoring_coaching == 'No' ? 'checked' : '' ?>  value="No" class="form-check-input" type="radio" name="team_receive_consulting_mentoring_coaching" />
                 <label class="form-check-label">No</label>
               </div>
@@ -190,11 +190,11 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">Do you have ties to industry partners?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->have_ties_to_industy_partners == 'Yes' ? 'checked' : '' ?>  value="Yes" class="form-check-input" type="radio" name="have_ties_to_industy_partners" />
                 <label class="form-check-label">Yes</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->have_ties_to_industy_partners == 'No' ? 'checked' : '' ?>  value="No" class="form-check-input" type="radio" name="have_ties_to_industy_partners" />
                 <label class="form-check-label">No</label>
               </div>
@@ -206,15 +206,15 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">Are you sourced from single or multiple funding?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->sourced_from_single_or_multiple_funding == 'Single' ? 'checked' : '' ?>  value="Single" class="form-check-input" type="radio" name="sourced_from_single_or_multiple_funding" />
                 <label class="form-check-label">Single funding</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->sourced_from_single_or_multiple_funding == 'Multiple' ? 'checked' : '' ?>  value="Multiple" class="form-check-input" type="radio" name="sourced_from_single_or_multiple_funding" />
                 <label class="form-check-label">Multiple funding</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->sourced_from_single_or_multiple_funding == 'No' ? 'checked' : '' ?>  value="No" class="form-check-input" type="radio" name="sourced_from_single_or_multiple_funding" />
                 <label class="form-check-label">No funding</label>
               </div>
@@ -226,11 +226,11 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">Has your team been granted public funds?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->team_been_granted_public_funds == 'Yes' ? 'checked' : '' ?>  value="Yes" class="form-check-input" type="radio" name="team_been_granted_public_funds" />
                 <label class="form-check-label">Yes</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->team_been_granted_public_funds == 'No' ? 'checked' : '' ?>  value="No" class="form-check-input" type="radio" name="team_been_granted_public_funds" />
                 <label class="form-check-label">No</label>
               </div>
@@ -242,23 +242,23 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">How long did it take your start-up to receive first investments (excluding governmental support funding e.g. EXIST)?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->long_take_startup_receive_first_investment == '1-6 months' ? 'checked' : '' ?>  value="1-6 months" class="form-check-input" type="radio" name="long_take_startup_receive_first_investment" />
                 <label class="form-check-label">1-6 months</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->long_take_startup_receive_first_investment == '7-12 months' ? 'checked' : '' ?>  value="7-12 months" class="form-check-input" type="radio" name="long_take_startup_receive_first_investment" />
                 <label class="form-check-label">7-12 months</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->long_take_startup_receive_first_investment == '13-24 months' ? 'checked' : '' ?>  value="13-24 months" class="form-check-input" type="radio" name="long_take_startup_receive_first_investment" />
                 <label class="form-check-label">13-24 months</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->long_take_startup_receive_first_investment == '25-36 months' ? 'checked' : '' ?>  value="25-36 months" class="form-check-input" type="radio" name="long_take_startup_receive_first_investment" />
                 <label class="form-check-label">25-36 months</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->long_take_startup_receive_first_investment == '37+ months' ? 'checked' : '' ?>  value="37+ months" class="form-check-input" type="radio" name="long_take_startup_receive_first_investment" />
                 <label class="form-check-label">37+ months</label>
               </div>
@@ -270,11 +270,11 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">Has an investor invested in your start-up so far (excludes public funding)?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->investor_invested_your_startup == 'Yes' ? 'checked' : '' ?>  value="Yes" class="form-check-input" type="radio" name="investor_invested_your_startup" />
                 <label class="form-check-label">Yes</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->investor_invested_your_startup == 'No' ? 'checked' : '' ?>  value="No" class="form-check-input" type="radio" name="investor_invested_your_startup" />
                 <label class="form-check-label">No</label>
               </div>
@@ -322,15 +322,15 @@
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">Has an investor invested in your start-up so far (excludes public funding)?</h6>
             <div class="options pt-2">
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->investor_invested_in_your_startup == '0' ? 'checked' : '' ?>  value="0" class="form-check-input" type="radio" name="investor_invested_in_your_startup" />
                 <label class="form-check-label">0</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->investor_invested_in_your_startup == '1' ? 'checked' : '' ?>  value="1" class="form-check-input" type="radio" name="investor_invested_in_your_startup" />
                 <label class="form-check-label">1</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check">
                 <input <?= $data->investor_invested_in_your_startup == '3' ? 'checked' : '' ?>  value="3" class="form-check-input" type="radio" name="investor_invested_in_your_startup" />
                 <label class="form-check-label">&gt; 3</label>
               </div>

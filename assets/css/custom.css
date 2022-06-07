@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, span, small, li, .btn, input, textarea,
 	list-style: none;
 	padding: 0;
 }
-#sort-it ol li {
+#sort-it ol li .sort-in {
 	position: relative;
 	min-height: 1em;
 	cursor: move;
@@ -25,12 +25,43 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, span, small, li, .btn, input, textarea,
 	border-radius: .25em;
 	display: list-item;
 }
-input[type="number"] {
+/* input[type="number"] {
 	-moz-appearance: textfield;
 }
  input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
  -webkit-appearance: none;
+} */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
 }
+
+input[type=number] {
+	/*for absolutely positioning spinners*/
+	position: relative; 
+	padding: 5px;
+	padding-right: 25px;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+	opacity: 1;
+  }
+
+  input[type=number]::-webkit-outer-spin-button, 
+  input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: inner-spin-button !important;
+	width: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+  }
+  
+
 #sort-it ol li:nth-child(1) input {
 	background: #28a745!important;
 }
@@ -46,16 +77,12 @@ input[type="number"] {
 #sort-it ol li i {
 	margin-left: 35px;
 }
-#sort-it ol li input {
-	position: absolute;
+#sort-it ol li span {
 	width: 20px;
 	height: 20px;
-	border-radius: 5px;
-	left: 8px;
-	top: 8px;
-	border: 0;
-	text-align: center;
-	color: #FFF;
+	font-size: 13px;
+	padding: 5px;
+	line-height: 9px;
 }
 #sort-it ol li input:hover, #sort-it ol li input:active, #sort-it ol li input:focus {
 	border: none !important;
@@ -67,6 +94,15 @@ input[type="number"] {
 }
 /* sortable plugin styles when dragged */
 .dragged {
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2000;
+}
+li.placeholder {
+	position: relative;
+	background: purple;
+}
+ed {
 	position: absolute;
 	opacity: 0.5;
 	z-index: 2000;
