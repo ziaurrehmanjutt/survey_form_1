@@ -61,6 +61,18 @@
 
         });
 
+        $("select").change(function(el) {
+            let pr = $(this).parent().parent().parent().children('strong');
+            if ($(this).val() != '-') {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            } else {
+                pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
+            }
+
+
+        });
+
+
         $("input[type='text']").each(function() {
 
             let pr = $(this).parent().parent().parent().parent().children('strong')
@@ -75,31 +87,43 @@
 
         $("input[type='number']").each(function() {
 
-            console.log($(this).val())
+
             let pr = $(this).parent().parent().parent().parent().children('strong')
             if ($(this).val()) {
                 pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
             } else {
                 pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
             }
-            console.log(pr);
+ 
             $(this).closest('.q-number').removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary')
 
         });
 
         $("input[type='radio']").each(function() {
-            console.log($(this).val())
+  
             let pr = $(this).parent().parent().parent().parent().children('strong')
             if ($(this).is(':checked')) {
                 pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
             }
             pr = $(this).parent().parent().parent().parent().parent().parent().parent().parent().children('strong');
-            console.log(pr);
+
             if ($(this).is(':checked')) {
                 pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
             }
 
         });
+
+        $("select").each(function() {
+
+            let pr = $(this).parent().parent().parent().children('strong');
+            if ($(this).val() != '-') {
+                pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
+            } else {
+                pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
+            }
+
+        });
+
 
         //is(':checked'))
 

@@ -15,20 +15,20 @@
     <form id="form1" method="POST">
         <div role="main" class="main py-5">
             <div class="container" id="part-one">
-                <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-secondary opacity-5 q-number text-center text-white rounded-circle mr-3">1</strong>
+                <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary  q-number text-center text-white rounded-circle mr-3">1</strong>
                     <div class="d-block overflow-hidden">
                         <h6 class="h6 mt-2">What is your gender?</h6>
                         <div class="options pt-2">
                             <div class="form-check form-check-inline">
-                                <input required id="your_gender1" <?= $data->your_gender == 'Male' ? 'checked' : '' ?> value="Male" class="form-check-input" type="radio" name="your_gender" />
+                                <input  id="your_gender1" <?= $data->your_gender == 'Male' ? 'checked' : '' ?> value="Male" class="form-check-input" type="radio" name="your_gender" />
                                 <label for="your_gender1" class="form-check-label">Male</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input required id="your_gender2" <?= $data->your_gender == 'Female' ? 'checked' : '' ?> value="Female" class="form-check-input" type="radio" name="your_gender" />
+                                <input  id="your_gender2" <?= $data->your_gender == 'Female' ? 'checked' : '' ?> value="Female" class="form-check-input" type="radio" name="your_gender" />
                                 <label for="your_gender2" class="form-check-label">Female</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input id="your_gender3" <?= $data->your_gender == 'Other' ? 'checked' : '' ?> required value="Other" class="form-check-input" type="radio" name="your_gender" />
+                                <input id="your_gender3" <?= $data->your_gender == 'Other' ? 'checked' : '' ?>  value="Other" class="form-check-input" type="radio" name="your_gender" />
                                 <label for="your_gender3" class="form-check-label">Other</label>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                         <h6 class="h6 mt-2">How old are you?</h6>
                         <div class="options pt-2">
                             <div class="form-group">
-                                <input name="old_are_you" value="<?= $data->old_are_you ?>" type="number" min="0" required class="form-control" />
+                                <input name="old_are_you" value="<?= $data->old_are_you ?>" type="number" min="0"  class="form-control" />
                             </div>
                         </div>
                     </div>
@@ -74,11 +74,12 @@
                     </div>
                     <div class="clearfix"></div>
                 </section>
-                <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-secondary opacity-5 q-number text-center text-white rounded-circle mr-3">4</strong>
+                <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary  q-number text-center text-white rounded-circle mr-3">4</strong>
                     <div class="d-block overflow-hidden">
                         <h6 class="h6 mt-2">What is/ was your main field of study?</h6>
                         <div class="options pt-2">
                             <select class="form-control" name="main_field_of_study">
+                                <option value="-">Select One Below</option>
                                 <option <?= $data->main_field_of_study == 'Arts' ? 'selected' : '' ?> value="Arts">Arts / Humanities (e.g., cultural studies, history, linguistics, philosophy, religion)</option>
                                 <option <?= $data->main_field_of_study == 'Business' ? 'selected' : '' ?> value="Business">Business / Management</option>
                                 <option <?= $data->main_field_of_study == 'Computer' ? 'selected' : '' ?> value="Computer">Computer sciences / IT</option>
@@ -102,7 +103,7 @@
                     </div>
                     <div class="clearfix"></div>
                 </section>
-                <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-secondary opacity-5 q-number text-center text-white rounded-circle mr-3">6</strong>
+                <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary  q-number text-center text-white rounded-circle mr-3">6</strong>
                     <div class="d-block overflow-hidden">
                         <h6 class="h6 mt-2">How many years of work experience do you have?</h6>
                         <div class="options pt-2">
