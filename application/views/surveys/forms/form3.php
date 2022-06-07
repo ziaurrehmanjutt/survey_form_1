@@ -110,7 +110,7 @@
                       <div class="clearfix"></div>
                     </li>
                   </ol> -->
-                  <ol>
+                  <!-- <ol>
                     <?php foreach ($sort_array as $key => $value) {  ?>
                       <li class="mt-3 mw-100" id="<?=$value['id']?>"><i class="fa fa-sort"></i>
                         <p class="d-inline-block mb-1"><?=$value['title']?></p>
@@ -119,8 +119,44 @@
                       </li>
                     <?php } ?>
       
+                  </ol> -->
+
+                  <ol>
+                    <li class="mt-3 mw-100">
+                      <span class="bg-success rounded-sm text-white float-left mt-2 mr-3">1</span>
+                      <div class="sort-in d-block overflow-hidden">
+                        <i class="fa fa-sort ml-2"></i>
+                        <p class="d-inline-block mb-1">Funding</p>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                    <li class="mt-3 mw-100">
+                      <span class="bg-info rounded-sm text-white float-left mt-2 mr-3">2</span>
+                      <div class="sort-in d-block overflow-hidden">
+                        <i class="fa fa-sort ml-2"></i>
+                        <p class="d-inline-block mb-1">Coaching</p>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                    <li class="mt-3 mw-100">
+                      <span class="bg-warning rounded-sm text-white float-left mt-2 mr-3">3</span>
+                      <div class="sort-in d-block overflow-hidden">
+                        <i class="fa fa-sort ml-2"></i>
+                        <p class="d-inline-block mb-1">Network access</p>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
+                    <li class="mt-3 mw-100">
+                      <span class="bg-danger rounded-sm text-white float-left mt-2 mr-3">4</span>
+                      <div class="sort-in d-block overflow-hidden">
+                        <i class="fa fa-sort ml-2"></i>
+                        <p class="d-inline-block mb-1">Gain knowledge</p>
+                        <div class="clearfix"></div>
+                      </div>
+                    </li>
                   </ol>
-                </div>
+								</div>
+
               </div>
             </div>
           </div>
@@ -169,7 +205,9 @@
               <div class="progress-bar bg-info" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-          <div> <button onclick="formSubmit()" name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+          <div> <button  name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+
+
         </div>
       </div>
     </section>
@@ -177,10 +215,3 @@
 </div>
 
 
-<script>
-  function formSubmit() {
-    console.log('Sumys');
-
-  //   console.log($("#form1").valid())
-  // }
-</script>

@@ -135,7 +135,7 @@
             <h6 class="h6 mt-2">If you share your team name with us and more than two teammates have filled in the questionnaire, we will send you an analyzed exposé with your results that shows your results in comparison to other start-ups and possible rooms for improvement.</h6>
             <div class="options pt-2">
               <div class="form-group">
-                <input type="text" class="form-control" value="possible_rooms_for_improvement" name="possible_rooms_for_improvement" />
+                <input type="text" class="form-control" value="<?=$data->possible_rooms_for_improvement?>" name="possible_rooms_for_improvement" />
               </div>
             </div>
           </div>
