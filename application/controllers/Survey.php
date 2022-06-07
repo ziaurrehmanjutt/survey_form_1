@@ -60,7 +60,7 @@ class Survey extends CI_Controller {
 	{
 		if(!isset($_SESSION['form_id'])){
 			redirect('survey');
-		}
+		} 
 		if(isset($_POST['submitData'])){
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
