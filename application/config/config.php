@@ -23,12 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-<<<<<<< HEAD
-$config['base_url'] = 'https://unsvr1.com/web/enisurvey/survey';
-// $config['base_url']  =  "http://".$_SERVER['HTTP_HOST'];
-=======
 $config['base_url'] = 'http://localhost/fiver';
->>>>>>> 1f230adceb4888c4489124feac7a95a6e3fb42cd
 
 // $config['base_url'] .= preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])).'/';
 /*
