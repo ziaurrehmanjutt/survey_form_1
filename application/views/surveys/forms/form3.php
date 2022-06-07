@@ -88,11 +88,7 @@
               <div class="form-group"> <span><small class="btn btn-success px-2 py-0 btn-sm mr-2">1</small> Very motivating</span> <span><small class="btn btn-danger px-2 py-0 btn-sm mx-2">4</small> Less motivating</span>
                 <div class="clearfix"></div>
                 <div id="sort-it" class="w-100">
-<<<<<<< HEAD
-                  <ol>
-=======
                   <!-- <ol>
->>>>>>> cecf15282a0746b93844491a77b54f8459ce50fe
                     <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
                       <p class="d-inline-block mb-1">Funding</p>
                       <input id="custom-number-1" name="main_motivation_take_part_this_program_funding" value="<?= $data->main_motivation_take_part_this_program_funding ?>" type="number" min="1" max="4"  class="form-control" />
@@ -124,11 +120,7 @@
                     <?php } ?>
       
                   </ol>
-<<<<<<< HEAD
-								</div>
-=======
                 </div>
->>>>>>> cecf15282a0746b93844491a77b54f8459ce50fe
               </div>
             </div>
           </div>
@@ -177,12 +169,7 @@
               <div class="progress-bar bg-info" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-<<<<<<< HEAD
-          <div> <button  name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
-          <a href="<?= base_url('survey/form4') ?>">Skip</a>
-=======
           <div> <button onclick="formSubmit()" name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
->>>>>>> cecf15282a0746b93844491a77b54f8459ce50fe
         </div>
       </div>
     </section>
@@ -191,13 +178,8 @@
 
 
 <script>
-<<<<<<< HEAD
-  // function formSubmit(){
-  //   console.log('Sumys');
-=======
   function formSubmit() {
     console.log('Sumys');
->>>>>>> cecf15282a0746b93844491a77b54f8459ce50fe
 
   //   console.log($("#form1").valid())
   // }
