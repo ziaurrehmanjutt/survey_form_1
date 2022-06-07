@@ -35,7 +35,7 @@
 <script src="<?= base_url('assets/') ?>js/demos/demo-finance.js"></script>
 
 <!-- Theme Custom -->
-<script src="<?= base_url('assets/') ?>js/custom.js"></script>
+<script src="<?= base_url('assets/') ?>js/custom.js?v=1"></script>
 
 <!-- Theme Initialization Files -->
 <script src="<?= base_url('assets/') ?>js/theme.init.js"></script>
@@ -44,6 +44,13 @@
 <script>
     $(document).ready(function() {
         // $("#form0").validate();
+        var idFrom = 1;
+        
+        $("input[type='radio']").each(function() {
+           
+        });
+
+        // for="q11_6"
         $("#form1").validate();
         $("input").change(function(el) {
             let pr = $(this).parent().parent().parent().parent().children('strong')
@@ -89,20 +96,31 @@
 
         $("input[type='number']").each(function() {
 
-
+            $(this).attr('min',0);
             let pr = $(this).parent().parent().parent().parent().children('strong')
             if ($(this).val()) {
                 pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
             } else {
                 pr.removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary');
             }
- 
+
             $(this).closest('.q-number').removeClass("opacity-5").removeClass("bg-secondary").addClass('bg-primary')
 
         });
 
         $("input[type='radio']").each(function() {
-  
+
+            let id  = $(this).attr('id');
+            if(!id){
+                id="id"+idFrom++;
+                $(this).attr('id',id)
+            }
+            console.log('id',id);
+            $(this).next( "label" ).attr('for',id);
+
+
+
+
             let pr = $(this).parent().parent().parent().parent().children('strong')
             if ($(this).is(':checked')) {
                 pr.addClass("opacity-5").addClass("bg-secondary").removeClass('bg-primary');
@@ -150,10 +168,10 @@
 
 
 <script>
-  $(function() {
-    var spinner = $( "#spinner" ).spinner();
-  });
-  </script>
+    $(function() {
+        var spinner = $("#spinner").spinner();
+    });
+</script>
 
 
 

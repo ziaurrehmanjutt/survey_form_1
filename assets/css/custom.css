@@ -111,3 +111,8 @@ li.placeholder {
 	position: relative;
 	background: purple;
 }
+
+.form-check-inline {
+
+    display: block !important;
+}

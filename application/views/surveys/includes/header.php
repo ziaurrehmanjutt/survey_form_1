@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="<?=base_url('assets/')?>css/skins/skin-finance.css">
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="<?=base_url('assets/')?>css/custom.css">
+    <link rel="stylesheet" href="<?=base_url('assets/')?>css/custom.css?v=1">
 
     <!-- Head Libs -->
     <script src="<?=base_url('assets/')?>vendor/modernizr/modernizr.min.js"></script>

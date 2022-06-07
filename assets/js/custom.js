@@ -6,7 +6,7 @@ $(function(){
       $("body").removeClass("dragging");
 
       console.log(item);
-      getInitialOrder('#sort-it li');
+      // getInitialOrder('#sort-it li');
 
       
     },
@@ -93,4 +93,4 @@ $(function(){
 //     }
 //   });
 // }
-}
+});

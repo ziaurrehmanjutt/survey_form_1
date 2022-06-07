@@ -35,18 +35,47 @@
           </div>
           <div class="clearfix"></div>
         </section>
-        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong>
-          <div class="d-block overflow-hidden">
+        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> 
+          <!-- <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong> -->
+          <table class="table table-bg table-striped">
+            <tr>
+              <td>   <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong></td>
+              <td>
+              <!-- <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong> -->
+                <h6 class="h6 mt-2">In how many incubator programs has your team been part of?</h6>
+              </td>
+              <td>
+                <div class="form-group">
+                  <input name="incubator_programs_your_team_been_part" value="<?= $data->incubator_programs_your_team_been_part ?>" type="number" class="form-control" />
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>
+              <!-- <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">30</strong> -->
+                <h6 class="h6 mt-2"><h6 class="h6 mt-2">In how many accelerator programs has your team been part of?</h6></h6>
+              </td>
+              <td>
+                <div class="form-group">
+                <input name="accelerator_programs_your_team_been_part" value="<?= $data->accelerator_programs_your_team_been_part ?>" type="number" class="form-control" />
+                </div>
+              </td>
+            </tr>
+
+          </table>
+          <!-- <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">In how many incubator programs has your team been part of?</h6>
             <div class="options pt-2">
               <div class="form-group">
                 <input name="incubator_programs_your_team_been_part" value="<?= $data->incubator_programs_your_team_been_part ?>" type="number" class="form-control" />
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="clearfix"></div>
         </section>
-        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">30</strong>
+        <!-- <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">30</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">In how many accelerator programs has your team been part of?</h6>
             <div class="options pt-2">
@@ -56,8 +85,8 @@
             </div>
           </div>
           <div class="clearfix"></div>
-        </section>
-        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">31</strong>
+        </section> -->
+        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">30</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">Has your been part of multiple incubator or accelerator programs at the same time?</h6>
             <div class="options pt-2">
@@ -81,83 +110,60 @@
           </div>
           <div class="clearfix"></div>
         </section>
-        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong id="ghty1" class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">32</strong>
+        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong id="ghty1" class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">31</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">What was your main motivation to take part in this/these program(s)?</h6>
             <div class="options pt-2">
               <div class="form-group"> <span><small class="btn btn-success px-2 py-0 btn-sm mr-2">1</small> Very motivating</span> <span><small class="btn btn-danger px-2 py-0 btn-sm mx-2">4</small> Less motivating</span>
                 <div class="clearfix"></div>
-                <div id="sort-it" class="w-100">
 
-                  <!-- <ol>
->>>>>>> cecf15282a0746b93844491a77b54f8459ce50fe
-                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                      <p class="d-inline-block mb-1">Funding</p>
-                      <input id="custom-number-1" name="main_motivation_take_part_this_program_funding" value="<?= $data->main_motivation_take_part_this_program_funding ?>" type="number" min="1" max="4"  class="form-control" />
-                      <div class="clearfix"></div>
-                    </li>
-                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                      <p class="d-inline-block mb-1">Coaching</p>
-                      <input id="custom-number-2" name="main_motivation_take_part_this_program_coaching" value="<?= $data->main_motivation_take_part_this_program_coaching ?>" type="number" min="1" max="4"  class="form-control" />
-                      <div class="clearfix"></div>
-                    </li>
-                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                      <p class="d-inline-block mb-1">Network access</p>
-                      <input id="custom-number-3" name="main_motivation_take_part_this_program_network" value="<?= $data->main_motivation_take_part_this_program_network ?>" type="number" min="1" max="4"  class="form-control" />
-                      <div class="clearfix"></div>
-                    </li>
-                    <li class="mt-3 mw-100"><i class="fa fa-sort"></i>
-                      <p class="d-inline-block mb-1">Gain knowledge</p>
-                      <input id="custom-number-4" name="main_motivation_take_part_this_program_knowledge" value="<?= $data->main_motivation_take_part_this_program_knowledge ?>" type="number" min="1" max="4"  class="form-control" />
-                      <div class="clearfix"></div>
-                    </li>
-                  </ol> -->
-                  <!-- <ol>
-                    <?php foreach ($sort_array as $key => $value) {  ?>
-                      <li class="mt-3 mw-100" id="<?=$value['id']?>"><i class="fa fa-sort"></i>
-                        <p class="d-inline-block mb-1"><?=$value['title']?></p>
-                        <input id="i<?=$value['id']?>" name="<?=$value['name']?>" type="number" min="1" readonly class="disabled" />
-                        <div class="clearfix"></div>
-                      </li>
-                    <?php } ?>
-      
-                  </ol> -->
+                <style>
+                  .nmi {
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    margin-top: 22px !important;
+                  }
+                </style>
+                <div style="display: flex;">
+                  <div>
+                    <span class="bg-success nmi rounded-sm text-white float-left mt-2 ">1</span>
+                    <br>
+                    <br>
 
-                  <ol>
-                    <li class="mt-3 mw-100">
-                      <span class="bg-success rounded-sm text-white float-left mt-2 mr-3">1</span>
-                      <div class="sort-in d-block overflow-hidden">
-                        <i class="fa fa-sort ml-2"></i>
-                        <p class="d-inline-block mb-1">Funding</p>
-                        <div class="clearfix"></div>
-                      </div>
-                    </li>
-                    <li class="mt-3 mw-100">
-                      <span class="bg-info rounded-sm text-white float-left mt-2 mr-3">2</span>
-                      <div class="sort-in d-block overflow-hidden">
-                        <i class="fa fa-sort ml-2"></i>
-                        <p class="d-inline-block mb-1">Coaching</p>
-                        <div class="clearfix"></div>
-                      </div>
-                    </li>
-                    <li class="mt-3 mw-100">
-                      <span class="bg-warning rounded-sm text-white float-left mt-2 mr-3">3</span>
-                      <div class="sort-in d-block overflow-hidden">
-                        <i class="fa fa-sort ml-2"></i>
-                        <p class="d-inline-block mb-1">Network access</p>
-                        <div class="clearfix"></div>
-                      </div>
-                    </li>
-                    <li class="mt-3 mw-100">
-                      <span class="bg-danger rounded-sm text-white float-left mt-2 mr-3">4</span>
-                      <div class="sort-in d-block overflow-hidden">
-                        <i class="fa fa-sort ml-2"></i>
-                        <p class="d-inline-block mb-1">Gain knowledge</p>
-                        <div class="clearfix"></div>
-                      </div>
-                    </li>
-                  </ol>
-								</div>
+                    <span style="margin-top: 27px !important;" class="bg-info nmi rounded-sm text-white float-left mt-2 ">2</span>
+                    <br>
+                    <br>
+                    <span style="margin-top: 27px !important;" class="bg-warning nmi rounded-sm text-white float-left mt-2 ">3</span>
+                    <br>
+                    <br>
+                    <span style="margin-top: 27px !important;" class="bg-danger nmi rounded-sm text-white float-left mt-2 mr-3">4</span>
+                  </div>
+                  <div>
+
+
+                    <div id="sort-it" class="w-100">
+                      <ol>
+                        <?php foreach ($sort_array as $key => $value) {  ?>
+                          <li class="mt-3 mw-100" id="<?= $value['id'] ?>">
+
+                            <div class="sort-in d-block overflow-hidden">
+                              <i class="fa fa-sort ml-2"></i>
+                              <p class="d-inline-block mb-1"><?= $value['title'] ?></p>
+                              <div class="clearfix"></div>
+
+                              <input type="hidden" id="i<?= $value['id'] ?>" name="<?= $value['name'] ?>" />
+                            </div>
+                          </li>
+                        <?php } ?>
+
+                      </ol>
+
+
+
+                    </div>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -165,7 +171,7 @@
           <div class="clearfix"></div>
         </section>
 
-        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">33</strong>
+        <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">32</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">I believe that being part of these programs helped us to reach our goals quicker.</h6>
             <div class="options pt-2">
@@ -207,7 +213,7 @@
               <div class="progress-bar bg-info" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-          <div> <button  name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
+          <div> <button name="submitData" type="submit" class="btn btn-primary px-3">Next &nbsp; <i class="fa fa-angle-right"></i></button> </div>
 
 
         </div>
@@ -215,5 +221,3 @@
     </section>
   </form>
 </div>
-
-

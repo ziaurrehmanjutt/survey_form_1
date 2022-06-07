@@ -15,7 +15,7 @@
   <form id="form1" method="POST">
     <div role="main" class="main py-5">
       <div class="container" id="part-one">
-        <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">36a</strong>
+        <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">35a</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">&nbsp;</h6>
             <div class="options pt-2">
@@ -287,7 +287,7 @@
           </div>
           <div class="clearfix"></div>
         </section>
-        <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">36b</strong>
+        <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">35b</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">&nbsp;</h6>
             <div class="options pt-2">
@@ -531,7 +531,7 @@
           </div>
           <div class="clearfix"></div>
         </section>
-        <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">36c</strong>
+        <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">35c</strong>
           <div class="d-block overflow-hidden">
             <h6 class="h6 mt-2">&nbsp;</h6>
             <div class="options pt-2">
