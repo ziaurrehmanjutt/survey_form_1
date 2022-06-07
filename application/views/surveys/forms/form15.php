@@ -15,7 +15,7 @@
   <form id="form1" method="POST">
 	<div role="main" class="main py-5">
     <div class="container" id="part-one">
-      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">48</strong>
+      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">47</strong>
         <div class="d-block overflow-hidden">
           <h6 class="h6 mt-2">&nbsp;</h6>
           <div class="options pt-2">
@@ -32,164 +32,164 @@
 			  </thead>
               <tr>
                 <td>I sometimes twist the truth in my favor when answering survey questions.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->twist_truth_in_my_favor == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="twist_truth_in_my_favor"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->twist_truth_in_my_favor == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="twist_truth_in_my_favor"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->twist_truth_in_my_favor == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="twist_truth_in_my_favor"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->twist_truth_in_my_favor == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="twist_truth_in_my_favor"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->twist_truth_in_my_favor == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="twist_truth_in_my_favor"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->twist_truth_in_my_favor == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="twist_truth_in_my_favor"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->twist_truth_in_my_favor == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="twist_truth_in_my_favor"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->twist_truth_in_my_favor == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="twist_truth_in_my_favor"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->twist_truth_in_my_favor == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="twist_truth_in_my_favor"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->twist_truth_in_my_favor == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="twist_truth_in_my_favor"  />
                   </div></td>
               </tr>
               <tr>
                 <td>I contemplate whether my responses to survey questions make me look bad in the eyes of others.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->responses_to_survey_questions == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->responses_to_survey_questions == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->responses_to_survey_questions == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->responses_to_survey_questions == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->responses_to_survey_questions == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->responses_to_survey_questions == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->responses_to_survey_questions == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->responses_to_survey_questions == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->responses_to_survey_questions == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->responses_to_survey_questions == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="responses_to_survey_questions"  />
                   </div></td>
               </tr>
               <tr>
                 <td>I don’t care what others may think of my answers to survey questions.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->my_answers_to_survey_questions == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="my_answers_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->my_answers_to_survey_questions == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="my_answers_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->my_answers_to_survey_questions == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="my_answers_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->my_answers_to_survey_questions == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="my_answers_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->my_answers_to_survey_questions == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="my_answers_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->my_answers_to_survey_questions == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="my_answers_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->my_answers_to_survey_questions == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="my_answers_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->my_answers_to_survey_questions == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="my_answers_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->my_answers_to_survey_questions == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="my_answers_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->my_answers_to_survey_questions == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="my_answers_to_survey_questions"  />
                   </div></td>
               </tr>
               <tr>
                 <td>When I answer questions about my behavior, I think about how others behave.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->answer_questions_about_my_behavior == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="answer_questions_about_my_behavior"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->answer_questions_about_my_behavior == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="answer_questions_about_my_behavior"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->answer_questions_about_my_behavior == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="answer_questions_about_my_behavior"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->answer_questions_about_my_behavior == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="answer_questions_about_my_behavior"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->answer_questions_about_my_behavior == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="answer_questions_about_my_behavior"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->answer_questions_about_my_behavior == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="answer_questions_about_my_behavior"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->answer_questions_about_my_behavior == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="answer_questions_about_my_behavior"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->answer_questions_about_my_behavior == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="answer_questions_about_my_behavior"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->answer_questions_about_my_behavior == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="answer_questions_about_my_behavior"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->answer_questions_about_my_behavior == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="answer_questions_about_my_behavior"  />
                   </div></td>
               </tr>
               <tr>
                 <td>I answer survey questions conscientiously.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_conscientiously == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="survey_questions_conscientiously"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_conscientiously == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="survey_questions_conscientiously"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_conscientiously == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="survey_questions_conscientiously"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_conscientiously == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="survey_questions_conscientiously"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_conscientiously == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="survey_questions_conscientiously"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_conscientiously == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="survey_questions_conscientiously"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_conscientiously == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="survey_questions_conscientiously"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_conscientiously == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="survey_questions_conscientiously"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_conscientiously == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="survey_questions_conscientiously"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_conscientiously == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="survey_questions_conscientiously"  />
                   </div></td>
               </tr>
               <tr>
                 <td>I try to give an accurate description of myself in surveys.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->accurate_description_myself == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="accurate_description_myself"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->accurate_description_myself == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="accurate_description_myself"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->accurate_description_myself == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="accurate_description_myself"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->accurate_description_myself == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="accurate_description_myself"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->accurate_description_myself == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="accurate_description_myself"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->accurate_description_myself == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="accurate_description_myself"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->accurate_description_myself == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="accurate_description_myself"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->accurate_description_myself == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="accurate_description_myself"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->accurate_description_myself == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="accurate_description_myself"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->accurate_description_myself == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="accurate_description_myself"  />
                   </div></td>
               </tr>
               <tr>
                 <td>It matters to me what others think of my responses to survey questions.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->matters_responses_to_survey_questions == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="matters_responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->matters_responses_to_survey_questions == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="matters_responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->matters_responses_to_survey_questions == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="matters_responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->matters_responses_to_survey_questions == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="matters_responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->matters_responses_to_survey_questions == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="matters_responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->matters_responses_to_survey_questions == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="matters_responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->matters_responses_to_survey_questions == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="matters_responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->matters_responses_to_survey_questions == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="matters_responses_to_survey_questions"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->matters_responses_to_survey_questions == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="matters_responses_to_survey_questions"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->matters_responses_to_survey_questions == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="matters_responses_to_survey_questions"  />
                   </div></td>
               </tr>
               <tr>
                 <td>I am honest in my responses to survey questions.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->honest_my_responses == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="honest_my_responses"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->honest_my_responses == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="honest_my_responses"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->honest_my_responses == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="honest_my_responses"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->honest_my_responses == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="honest_my_responses"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->honest_my_responses == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="honest_my_responses"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->honest_my_responses == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="honest_my_responses"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->honest_my_responses == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="honest_my_responses"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->honest_my_responses == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="honest_my_responses"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->honest_my_responses == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="honest_my_responses"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->honest_my_responses == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="honest_my_responses"  />
                   </div></td>
               </tr>
               <tr>
                 <td>I answer survey questions irrespectively of what others may think of my answers.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_irrespectively == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="survey_questions_irrespectively"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_irrespectively == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="survey_questions_irrespectively"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_irrespectively == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="survey_questions_irrespectively"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_irrespectively == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="survey_questions_irrespectively"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_irrespectively == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="survey_questions_irrespectively"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_irrespectively == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="survey_questions_irrespectively"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_irrespectively == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="survey_questions_irrespectively"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_irrespectively == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="survey_questions_irrespectively"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->survey_questions_irrespectively == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="survey_questions_irrespectively"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->survey_questions_irrespectively == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="survey_questions_irrespectively"  />
                   </div></td>
               </tr>
             </table>

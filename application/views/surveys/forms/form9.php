@@ -22,7 +22,6 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th></th>
                   <th>strongly disagree</th>
                   <th></th>
                   <th></th>
@@ -59,6 +58,16 @@
                       <input class="form-check-input" <?= $data->advance_career_in_business == '4' ? 'checked' : '' ?> value="4" type="radio" name="advance_career_in_business" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->advance_career_in_business == '5' ? 'checked' : '' ?> value="5" type="radio" name="advance_career_in_business" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->advance_career_in_business == '6' ? 'checked' : '' ?> value="6" type="radio" name="advance_career_in_business" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>As a firm founder, it will be very important to me...to operate my firm on the basis of solid management practices.</td>
@@ -85,6 +94,16 @@
                   <td width="60">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" <?= $data->solid_management_practices == '4' ? 'checked' : '' ?> value="4" type="radio" name="solid_management_practices" />
+                    </div>
+                  </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->solid_management_practices == '5' ? 'checked' : '' ?> value="5" type="radio" name="solid_management_practices" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->solid_management_practices == '6' ? 'checked' : '' ?> value="6" type="radio" name="solid_management_practices" />
                     </div>
                   </td>
               </tr>
@@ -115,6 +134,16 @@
                       <input class="form-check-input" <?= $data->financial_prospects_of_business == '4' ? 'checked' : '' ?> value="4" type="radio" name="financial_prospects_of_business" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->financial_prospects_of_business == '5' ? 'checked' : '' ?> value="5" type="radio" name="financial_prospects_of_business" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->financial_prospects_of_business == '6' ? 'checked' : '' ?> value="6" type="radio" name="financial_prospects_of_business" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>When managing my firm, it will be very important to me...to have a strong focus on what my firm can achieve vis-à-vis the competition.</td>
@@ -141,6 +170,16 @@
                   <td width="60">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" <?= $data->what_my_firm_achieve == '4' ? 'checked' : '' ?> value="4" type="radio" name="what_my_firm_achieve" />
+                    </div>
+                  </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->what_my_firm_achieve == '5' ? 'checked' : '' ?> value="5" type="radio" name="what_my_firm_achieve" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->what_my_firm_achieve == '6' ? 'checked' : '' ?> value="6" type="radio" name="what_my_firm_achieve" />
                     </div>
                   </td>
               </tr>
@@ -171,6 +210,16 @@
                       <input class="form-check-input" <?= $data->establish_strong_competitive_advantage == '4' ? 'checked' : '' ?> value="4" type="radio" name="establish_strong_competitive_advantage" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->establish_strong_competitive_advantage == '5' ? 'checked' : '' ?> value="5" type="radio" name="establish_strong_competitive_advantage" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->establish_strong_competitive_advantage == '6' ? 'checked' : '' ?> value="6" type="radio" name="establish_strong_competitive_advantage" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>I will create my firm in order...to solve a specific problem for a group of people that I strongly identify with (e.g., friends, colleagues, club, community).</td>
@@ -197,6 +246,16 @@
                   <td width="60">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" <?= $data->solve_specific_problem_for_group == '4' ? 'checked' : '' ?> value="4" type="radio" name="solve_specific_problem_for_group" />
+                    </div>
+                  </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->solve_specific_problem_for_group == '5' ? 'checked' : '' ?> value="5" type="radio" name="solve_specific_problem_for_group" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->solve_specific_problem_for_group == '6' ? 'checked' : '' ?> value="6" type="radio" name="solve_specific_problem_for_group" />
                     </div>
                   </td>
               </tr>
@@ -227,6 +286,16 @@
                       <input class="form-check-input" <?= $data->play_proactive_role_in_shaping_activities == '4' ? 'checked' : '' ?> value="4" type="radio" name="play_proactive_role_in_shaping_activities" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->play_proactive_role_in_shaping_activities == '5' ? 'checked' : '' ?> value="5" type="radio" name="play_proactive_role_in_shaping_activities" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->play_proactive_role_in_shaping_activities == '6' ? 'checked' : '' ?> value="6" type="radio" name="play_proactive_role_in_shaping_activities" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>As a firm founder, it will be very important to me...to provide a product/service that is useful to a group of people that I strongly identify with (e.g., friends, colleagues, club, community).</td>
@@ -253,6 +322,16 @@
                   <td width="60">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" <?= $data->service_that_useful_to_group == '4' ? 'checked' : '' ?> value="4" type="radio" name="service_that_useful_to_group" />
+                    </div>
+                  </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->service_that_useful_to_group == '5' ? 'checked' : '' ?> value="5" type="radio" name="service_that_useful_to_group" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->service_that_useful_to_group == '6' ? 'checked' : '' ?> value="6" type="radio" name="service_that_useful_to_group" />
                     </div>
                   </td>
               </tr>
@@ -283,6 +362,16 @@
                       <input class="form-check-input" <?= $data->have_strong_focus_on_group == '4' ? 'checked' : '' ?> value="4" type="radio" name="have_strong_focus_on_group" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->have_strong_focus_on_group == '5' ? 'checked' : '' ?> value="5" type="radio" name="have_strong_focus_on_group" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->have_strong_focus_on_group == '6' ? 'checked' : '' ?> value="6" type="radio" name="have_strong_focus_on_group" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>When managing my firm, it will be very important to me...to support and advance a group of people that I strongly identify with.</td>
@@ -309,6 +398,16 @@
                   <td width="60">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" <?= $data->support_and_advance_group_people == '4' ? 'checked' : '' ?> value="4" type="radio" name="support_and_advance_group_people" />
+                    </div>
+                  </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->support_and_advance_group_people == '5' ? 'checked' : '' ?> value="5" type="radio" name="support_and_advance_group_people" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->support_and_advance_group_people == '6' ? 'checked' : '' ?> value="6" type="radio" name="support_and_advance_group_people" />
                     </div>
                   </td>
               </tr>
@@ -339,6 +438,16 @@
                       <input class="form-check-input" <?= $data->changing_how_world_operates == '4' ? 'checked' : '' ?> value="4" type="radio" name="changing_how_world_operates" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->changing_how_world_operates == '5' ? 'checked' : '' ?> value="5" type="radio" name="changing_how_world_operates" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->changing_how_world_operates == '6' ? 'checked' : '' ?> value="6" type="radio" name="changing_how_world_operates" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>As a firm founder, it will be very important to me...to be a highly responsible citizen of our world.</td>
@@ -365,6 +474,16 @@
                   <td width="60">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" <?= $data->highly_responsible_citizen == '4' ? 'checked' : '' ?> value="4" type="radio" name="highly_responsible_citizen" />
+                    </div>
+                  </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->highly_responsible_citizen == '5' ? 'checked' : '' ?> value="5" type="radio" name="highly_responsible_citizen" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->highly_responsible_citizen == '6' ? 'checked' : '' ?> value="6" type="radio" name="highly_responsible_citizen" />
                     </div>
                   </td>
               </tr>
@@ -395,6 +514,16 @@
                       <input class="form-check-input" <?= $data->make_world_better_place == '4' ? 'checked' : '' ?> value="4" type="radio" name="make_world_better_place" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->make_world_better_place == '5' ? 'checked' : '' ?> value="5" type="radio" name="make_world_better_place" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->make_world_better_place == '6' ? 'checked' : '' ?> value="6" type="radio" name="make_world_better_place" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>When managing my firm, it will be very important to me...to have a strong focus on what the firm is able to achieve for society-at-large.</td>
@@ -423,6 +552,16 @@
                       <input class="form-check-input" <?= $data->achieve_for_society == '4' ? 'checked' : '' ?> value="4" type="radio" name="achieve_for_society" />
                     </div>
                   </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->achieve_for_society == '5' ? 'checked' : '' ?> value="5" type="radio" name="achieve_for_society" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->achieve_for_society == '6' ? 'checked' : '' ?> value="6" type="radio" name="achieve_for_society" />
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>When managing my firm, it will be very important to me...to convince others that private firms are indeed able to address the type of societal challenges that my firm addresses (e.g., social justice, environmental protection).</td>
@@ -449,6 +588,16 @@
                   <td width="60">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" <?= $data->societal_challenges_firm_addresses == '4' ? 'checked' : '' ?> value="4" type="radio" name="societal_challenges_firm_addresses" />
+                    </div>
+                  </td>
+									<td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->societal_challenges_firm_addresses == '5' ? 'checked' : '' ?> value="5" type="radio" name="societal_challenges_firm_addresses" />
+                    </div>
+                  </td>
+                  <td width="60">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" <?= $data->societal_challenges_firm_addresses == '6' ? 'checked' : '' ?> value="6" type="radio" name="societal_challenges_firm_addresses" />
                     </div>
                   </td>
               </tr>

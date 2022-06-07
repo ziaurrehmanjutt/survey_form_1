@@ -15,7 +15,7 @@
   <form id="form1" method="POST">
 	<div role="main" class="main py-5">
     <div class="container" id="part-one">
-      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">49</strong>
+      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">48</strong>
         <div class="d-block overflow-hidden">
           <h6 class="h6 mt-2">&nbsp;</h6>
           <div class="options pt-2">
@@ -32,110 +32,110 @@
 			  </thead>
               <tr>
                 <td>In an argument, I always remain objective and stick to the facts.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->remain_objective_and_stick == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="remain_objective_and_stick"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->remain_objective_and_stick == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="remain_objective_and_stick"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->remain_objective_and_stick == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="remain_objective_and_stick"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->remain_objective_and_stick == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="remain_objective_and_stick"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->remain_objective_and_stick == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="remain_objective_and_stick"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->remain_objective_and_stick == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="remain_objective_and_stick"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->remain_objective_and_stick == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="remain_objective_and_stick"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->remain_objective_and_stick == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="remain_objective_and_stick"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->remain_objective_and_stick == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="remain_objective_and_stick"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->remain_objective_and_stick == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="remain_objective_and_stick"  />
                   </div></td>
               </tr>
               <tr>
                 <td>Even if I am feeling stressed, I am always friendly and polite to others.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->friendly_and_polite == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="friendly_and_polite"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->friendly_and_polite == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="friendly_and_polite"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->friendly_and_polite == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="friendly_and_polite"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->friendly_and_polite == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="friendly_and_polite"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->friendly_and_polite == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="friendly_and_polite"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->friendly_and_polite == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="friendly_and_polite"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->friendly_and_polite == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="friendly_and_polite"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->friendly_and_polite == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="friendly_and_polite"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->friendly_and_polite == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="friendly_and_polite"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->friendly_and_polite == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="friendly_and_polite"  />
                   </div></td>
               </tr>
               <tr>
                 <td>When talking to someone, I always listen carefully to what the other person says.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->always_listen_carefully == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="always_listen_carefully"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->always_listen_carefully == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="always_listen_carefully"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->always_listen_carefully == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="always_listen_carefully"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->always_listen_carefully == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="always_listen_carefully"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->always_listen_carefully == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="always_listen_carefully"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->always_listen_carefully == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="always_listen_carefully"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->always_listen_carefully == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="always_listen_carefully"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->always_listen_carefully == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="always_listen_carefully"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->always_listen_carefully == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="always_listen_carefully"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->always_listen_carefully == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="always_listen_carefully"  />
                   </div></td>
               </tr>
               <tr>
                 <td>It has happened that I have taken advantage of someone in the past.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->advantage_of_someone == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="advantage_of_someone"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->advantage_of_someone == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="advantage_of_someone"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->advantage_of_someone == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="advantage_of_someone"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->advantage_of_someone == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="advantage_of_someone"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->advantage_of_someone == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="advantage_of_someone"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->advantage_of_someone == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="advantage_of_someone"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->advantage_of_someone == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="advantage_of_someone"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->advantage_of_someone == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="advantage_of_someone"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->advantage_of_someone == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="advantage_of_someone"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->advantage_of_someone == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="advantage_of_someone"  />
                   </div></td>
               </tr>
               <tr>
                 <td>I have occasionally thrown litter away in the countryside or on to the road.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->occasionally_thrown_litter == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="occasionally_thrown_litter"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->occasionally_thrown_litter == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="occasionally_thrown_litter"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->occasionally_thrown_litter == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="occasionally_thrown_litter"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->occasionally_thrown_litter == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="occasionally_thrown_litter"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->occasionally_thrown_litter == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="occasionally_thrown_litter"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->occasionally_thrown_litter == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="occasionally_thrown_litter"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->occasionally_thrown_litter == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="occasionally_thrown_litter"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->occasionally_thrown_litter == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="occasionally_thrown_litter"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->occasionally_thrown_litter == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="occasionally_thrown_litter"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->occasionally_thrown_litter == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="occasionally_thrown_litter"  />
                   </div></td>
               </tr>
               <tr>
                 <td>Sometimes I only help people if I expect to get something in return.</td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->expect_to_get_something == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="expect_to_get_something"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->expect_to_get_something == '0' ? 'checked' : '' ?> class="form-check-input" value="0" type="radio" name="expect_to_get_something"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->expect_to_get_something == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="expect_to_get_something"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->expect_to_get_something == '1' ? 'checked' : '' ?> class="form-check-input" value="1" type="radio" name="expect_to_get_something"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->expect_to_get_something == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="expect_to_get_something"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->expect_to_get_something == '2' ? 'checked' : '' ?> class="form-check-input" value="2" type="radio" name="expect_to_get_something"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->expect_to_get_something == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="expect_to_get_something"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->expect_to_get_something == '3' ? 'checked' : '' ?> class="form-check-input" value="3" type="radio" name="expect_to_get_something"  />
                   </div></td>
-                <td width="60"><div class="form-check form-check-inline">
-              			<input <?= $data->expect_to_get_something == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="expect_to_get_something"  />
+                <td width="60"><div class="form-check">
+              			<input id="q11_6" <?= $data->expect_to_get_something == '4' ? 'checked' : '' ?> class="form-check-input" value="4" type="radio" name="expect_to_get_something"  />
                   </div></td>
               </tr>
             </table>

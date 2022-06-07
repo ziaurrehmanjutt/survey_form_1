@@ -15,7 +15,7 @@
   <form id="form1" method="POST">
   <div role="main" class="main py-5">
     <div class="container" id="part-one">
-      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">42</strong>
+      <section class="question bg-light border p-3 rounded-lg shadow"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">41</strong>
         <div class="d-block overflow-hidden">
           <h6 class="h6 mt-2">Within the last 12 months we carried out the following action</h6>
           <div class="options pt-2">
@@ -59,7 +59,7 @@
         </div>
         <div class="clearfix"></div>
       </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">43</strong>
+      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">42</strong>
         <div class="d-block overflow-hidden">
           <h6 class="h6 mt-2">Within the last 12 months we developed one or more of the following artifacts to conduct an experiment</h6>
           <div class="options pt-2">
@@ -134,7 +134,7 @@
         </div>
         <div class="clearfix"></div>
       </section>
-      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">44</strong>
+      <section class="question bg-light border p-3 rounded-lg shadow mt-4"> <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">43</strong>
         <div class="d-block overflow-hidden">
           <h6 class="h6 mt-2">Within the last 12 months we involved one of the following stakeholders in at least one experiment</h6>
           <div class="options pt-2">
