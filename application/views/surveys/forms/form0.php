@@ -25,7 +25,7 @@
             <div class="options pt-2">
               <p><b>In Pursuit of Happiness: The Why Start-Up?</b></p>
               <p>Dear start-up (co-)founder or employee,</p>
-              <p>At the Institute of Entrepreneurship and Innovation Science at the University of Stuttgart, we conduct empirical research on topics relating to new venture teams' culture and personal motivations. This is especially important as ongoing research shows that specific personality traits lead to different outcomes. For example, current research shows that teams with a common identity increase their chance of survival, whereas heterogeneous teams are more likely to dissipate.</p>
+              <p>At the Institute of Entrepreneurship and Innovation Science at the <b>University of Stuttgart</b>, we conduct empirical research on topics relating to new venture teams' culture and personal motivations. This is especially important as ongoing research shows that specific personality traits lead to different outcomes. For example, current research shows that teams with a common identity increase their chance of survival, whereas heterogeneous teams are more likely to dissipate.</p>
 
               <p>
                 We know that time is a precious thing, especially for you. That is why we only ask you for approximately 20 min of it. Furthermore,
@@ -51,7 +51,7 @@
 
               <p><b>Your Why Start-up? research team</b></p>
 
-              <h3><b>Data protection law information on the processing of personal data for participation in the project “The Why Start-up?" according to Art. 13 DSGVO</b></h3>
+              <p style="font-size: 18px;"><b>Data protection law information on the processing of personal data for participation in the project “The Why Start-up?" according to Art. 13 DSGVO</b></p>
 
               <p>
                   Participation in this survey is voluntary. We would like to point out that this is a scientific survey and that the data will be treated anonymously and in strict confidence. The decision to participate is based on your consent (Art. 6 Abs. 1 lit. a DSGVO). The subsequent processing is based on Art. 6 Abs. 1 lit. e in conjunction with Art. 6 Abs. 3 of the General Data Protection Regulation (DSGVO) in conjunction with § 13 Abs. 1 of the Baden-Württemberg State Data Protection Act.

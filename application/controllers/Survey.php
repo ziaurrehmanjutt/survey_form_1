@@ -14,7 +14,7 @@ class Survey extends CI_Controller {
 	{
 		if(isset($_POST['submitData'])){
 			$this->Survey_Model->startNewForm();
-			redirect('survey/form1');
+			redirect(base64_encode('form01'));
 			exit();
 		}
 		$this->load->view('surveys/includes/header.php');
@@ -31,7 +31,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_1');
-			redirect('survey/form2');
+			redirect(base64_encode('form02'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_1');
@@ -48,7 +48,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_2');
-			redirect('survey/form3');
+			redirect(base64_encode('form03'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_2');
@@ -65,7 +65,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_3');
-			redirect('survey/form4');
+			redirect(base64_encode('form04'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_3');
@@ -121,7 +121,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_4');
-			redirect('survey/form5');
+			redirect(base64_encode('form05'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_4');
@@ -139,7 +139,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_5');
-			redirect('survey/form6');
+			redirect(base64_encode('form06'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_5');
@@ -157,7 +157,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_6');
-			redirect('survey/form7');
+			redirect(base64_encode('form07'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_6');
@@ -175,7 +175,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_7');
-			redirect('survey/form8');
+			redirect(base64_encode('form08'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_7');
@@ -193,7 +193,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_8');
-			redirect('survey/form9');
+			redirect(base64_encode('form09'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_8');
@@ -211,7 +211,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_9');
-			redirect('survey/form10');
+			redirect(base64_encode('form10'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_9');
@@ -229,7 +229,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_10');
-			redirect('survey/form11');
+			redirect(base64_encode('form11'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_10');
@@ -247,7 +247,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_11');
-			redirect('survey/form12');
+			redirect(base64_encode('form12'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_11');
@@ -265,7 +265,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_12');
-			redirect('survey/form13');
+			redirect(base64_encode('form13'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_12');
@@ -283,7 +283,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_13');
-			redirect('survey/form14');
+			redirect(base64_encode('form14'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_13');
@@ -301,7 +301,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_14');
-			redirect('survey/form15');
+			redirect(base64_encode('form15'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_14');
@@ -319,7 +319,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_15');
-			redirect('survey/form16');
+			redirect(base64_encode('form16'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_15');
@@ -337,7 +337,7 @@ class Survey extends CI_Controller {
 			$postArrau  = $_POST;
 			unset($postArrau['submitData']);
 			$this->Survey_Model->updateOrSave($postArrau,'survey_form_16');
-			redirect('survey/form17');
+			redirect(base64_encode('form17'));
 			exit();
 		}
 		$data['data']  = $this->Survey_Model->getData('survey_form_16');

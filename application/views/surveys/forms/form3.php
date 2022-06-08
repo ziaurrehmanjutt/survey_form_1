@@ -5,7 +5,7 @@
         <div class="header-row">
           <div class="header-column">
             <div class="header-row">
-              <div class="header-logo"> <a href="demo-finance.html"> <img alt="Porto Finance" width="50" src="https://surveyblitz-fql4jh2d7-surveyblitz-app.vercel.app/_next/image?url=https%3A%2F%2Faqylnrlgyrwkkhrdghyz.supabase.co%2Fstorage%2Fv1%2Fobject%2Fsign%2Fsurveyblitz-testing%2Fa46c502f-3fd4-4ab0-b097-715f50b56865%2Fde-DE%2Feni.png%3Ftoken%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdXJ2ZXlibGl0ei10ZXN0aW5nL2E0NmM1MDJmLTNmZDQtNGFiMC1iMDk3LTcxNWY1MGI1Njg2NS9kZS1ERS9lbmkucG5nIiwiaWF0IjoxNjUxMjY1NzkxLCJleHAiOjE5NjY2MjU3OTF9.MkOTgn16ot3CCixVn6RuLnNYxkxRdhqzZRtGDU1p1iY&w=3840&q=75"> </a> </div>
+              <div class="header-logo"> <a href="<?= base_url() ?>"> <img alt="Porto Finance" width="50" src="https://surveyblitz-fql4jh2d7-surveyblitz-app.vercel.app/_next/image?url=https%3A%2F%2Faqylnrlgyrwkkhrdghyz.supabase.co%2Fstorage%2Fv1%2Fobject%2Fsign%2Fsurveyblitz-testing%2Fa46c502f-3fd4-4ab0-b097-715f50b56865%2Fde-DE%2Feni.png%3Ftoken%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdXJ2ZXlibGl0ei10ZXN0aW5nL2E0NmM1MDJmLTNmZDQtNGFiMC1iMDk3LTcxNWY1MGI1Njg2NS9kZS1ERS9lbmkucG5nIiwiaWF0IjoxNjUxMjY1NzkxLCJleHAiOjE5NjY2MjU3OTF9.MkOTgn16ot3CCixVn6RuLnNYxkxRdhqzZRtGDU1p1iY&w=3840&q=75"> </a> </div>
             </div>
           </div>
         </div>
@@ -36,10 +36,14 @@
           <div class="clearfix"></div>
         </section>
         <section class="question bg-light border p-3 rounded-lg mt-4 shadow"> 
-          <!-- <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong> -->
-          <table class="table table-bg table-striped">
+
+          <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong>
+          <table style="clear: both;
+    margin-left: 50px;
+    width: auto;    width: -webkit-fill-available;" class="table table-striped">
             <tr>
-              <td>   <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong></td>
+              <!-- <td></td> -->
+              <!-- <td>   <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong></td> -->
               <td>
               <!-- <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">29</strong> -->
                 <h6 class="h6 mt-2">In how many incubator programs has your team been part of?</h6>
@@ -52,7 +56,7 @@
             </tr>
 
             <tr>
-              <td></td>
+              <!-- <td></td> -->
               <td>
               <!-- <strong class="float-left bg-primary q-number text-center text-white rounded-circle mr-3">30</strong> -->
                 <h6 class="h6 mt-2"><h6 class="h6 mt-2">In how many accelerator programs has your team been part of?</h6></h6>
@@ -206,7 +210,7 @@
     <section class="fixed-bottom position-fixed w-100 bg-white shadow p-4 border">
       <div class="container">
         <div class="d-flex justify-content-between">
-          <div> <a href="<?= base_url('survey/form2') ?>" class="btn btn-primary px-3"><i class="fa fa-angle-left"></i> &nbsp; Previous</a> </div>
+          <div> <a href="<?= base_url().base64_encode('form02') ?>" class="btn btn-primary px-3"><i class="fa fa-angle-left"></i> &nbsp; Previous</a> </div>
           <div>
             <p class="mb-1">Page 3 from 17</p>
             <div class="progress">
