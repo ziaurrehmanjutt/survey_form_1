@@ -10,8 +10,9 @@
         <!-- -->powered by SurveyBlitz.app
         <!-- -->
     </title>
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
+    <meta name="keywords" content="Survey Form" />
+    <meta name="keywords" content="SurveyBlitz" />
+    <meta name="description" content="Survey -Survey for the Institute for Entrepreneurship and Innovation Research (ENI)">
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
